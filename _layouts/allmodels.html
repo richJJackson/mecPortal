@@ -12,26 +12,25 @@
 
     {% include header.html %} 
     
-    
     <!-- Main -->
     <div id="main" class="alt">
 
       <!-- One -->
       <section id="one">
 	<div class="inner">
-          {% for post in site.posts %}
-	  {% if post.title != 404 %}
+          {% for model in site.models %}
+	  {% if model.title != 404 %}
 	  <header class="major">
-	    
 	    <h1>
-	    <a href="{{ site.baseurl }}/{{ post.url }}">
-      {{ post.title }}
+	    <a href="{{ site.baseurl }}/{{ model.url }}">
+      {{ model.title }} - {{ model.area }}
     </a>
 	    </h1>
 	  </header>
-	  {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
-	  {% if post.date %}<p>{{ post.date }}</p>{% endif %}
-	  <p>{{ post.description }}</p>
+	
+	  {% if model.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
+	  {% if model.date %}<p>{{ model.date }}</p>{% endif %}
+	  <p>{{ model.description }}</p>
 	  {% endif %}
           {% endfor %}
 	</div>

@@ -25,6 +25,13 @@ markdown: kramdown
 sass:
   style: compressed
 
+collections:
+  models:
+    output: true
+  applications:
+    output: true
+
+
 exclude:
 - "*.gemspec"
 - LICENSE.md
