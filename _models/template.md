@@ -6,6 +6,9 @@ area: tmpArea
 description:  A template of the information to include
 ---
 
+<!------>
+<!------>
+
 <!-- Setting -->
 # Setting 
 A quick description of the model setting is provided:  E.G. This model
@@ -29,6 +32,10 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
 		from randomisation until death by any cause </p>
 	</div>
 </div>
+
+
+<!------>
+<!------>
 
 
 <!-- Data -->
@@ -119,6 +126,9 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
 
 
 
+<!------>
+<!------>
+ 
 <!-- Model -->
 <h1 id="data"> Model </h1>
 
@@ -207,7 +217,8 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
   
 
  
-
+ <!------>
+ <!------>
 
 
 <!-- Validation -->
@@ -293,6 +304,8 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
   </div>
 
 
+<!------>
+<!------>
 
 ## Use this model!
 
@@ -301,6 +314,9 @@ Download this model and learn how to use it by visiting
 github/richJJackson/pscLibrary/test_model
 
 
+<!------>
+<!------>
+ 
 ## References
 
 Meyer T, Fox R, Ma YT, Ross PJ, James MW, Sturgess R, Stubbs C, Stocken DD, Wall 
