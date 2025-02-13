@@ -15,25 +15,25 @@
     <!-- Main -->
     <div id="main" class="alt">
 
+    
+
       <!-- One -->
-     <section id="banner">
-	      <div class="inner">
-          {% for model in site.models %}
-  	        {% if model.title != 404 %}
-  	    
-  	        <header class="major">
-  	          <h1>
-  	            <a href="{{ site.baseurl }}/{{ model.url }}">
-                {{ model.title }} - {{ model.area }}
-                </a>
-  	          </h1>
-  	        </header>
-  	
-            {% if model.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
-            <p>{{ model.description }}</p>
-            {% endif %}
+      <section id="one" class="tiles">
+
+          {% for app in site.models %}
+	        {% if app.title != 404 %}
+	        <article>
+        	  <header class="major">
+        	    <h1>
+                {{ app.title }} - {{ app.area }}
+        	    </h1>
+        	    <p>{{ app.description }}</p>
+        	  </header>
+      	    
+          </article>
+      	  {% endif %}
           {% endfor %}
-	        </div>
+
       </section>
 
     </div>
