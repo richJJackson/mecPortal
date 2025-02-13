@@ -303,7 +303,7 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
 
   Some text to describe the validation output
 
-  <span class="image fit"><img src="{% link https://richjjackson.github.io/mecPortal/assets/images/TACE_km1.png %}" alt="" /></span>
+  <span class="image fit"><img src="{% link /mecPortal/assets/images/TACE_km1.png %}" alt="" /></span>
   <span class="image fit"><img src="{% link assets/images/pic03.jpg %}" alt="" /></span>
    </div>
 
