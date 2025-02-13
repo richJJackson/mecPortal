@@ -16,24 +16,23 @@
     <div id="main" class="alt">
 
       <!-- One -->
-      <section id="one">
-	<div class="inner">
+      <section id="one" class="tiles">
+
           {% for app in site.applications %}
-	  {% if app.title != 404 %}
-	  <header class="major">
-	    <h1>
-	    <a href="{{ site.baseurl }}/{{ app.url }}">
-      {{ app.title }} - {{ app.area }}
-    </a>
-	    </h1>
-	  </header>
-	
-	  {% if app.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
-	  {% if app.date %}<p>{{ app.date }}</p>{% endif %}
-	  <p>{{ app.description }}</p>
-	  {% endif %}
+	        {% if app.title != 404 %}
+	        <article>
+        	  <header class="major">
+        	    <h1>
+        	      <a href="{{ site.baseurl }}/{{ app.url }}">
+                {{ app.title }} - {{ app.area }}
+        	    </h1>
+        	    <p>{{ app.description }}</p>
+        	  </header>
+      	    
+          </article>
+      	  {% endif %}
           {% endfor %}
-	</div>
+
       </section>
 
     </div>
