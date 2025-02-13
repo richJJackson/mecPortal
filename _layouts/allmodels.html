@@ -14,20 +14,36 @@
     
     <!-- Main -->
     <div id="main" class="alt">
+      
+     <!-- Banner -->
+    <section id="banner" class="major">
+        <div class="inner">
+            <header class="major">
+                <h1>Counter Factual Models</h1>
+            </header>
+            <div class="content">
+                <p style="text-transform: uppercase;">A selection of models to generate counter factual evidence!</p>
+                <ul class="actions">
+                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     
 
       <!-- One -->
       <section id="one" class="tiles">
 
-          {% for app in site.models %}
-	        {% if app.title != 404 %}
+          {% for model in site.models %}
+	        {% if model.title != 404 %}
 	        <article>
         	  <header class="major">
         	    <h1>
-                {{ app.title }} - {{ app.area }}
+        	      <a href="{{ site.baseurl }}/{{ model.url }}">
+                {{ model.title }} - {{ model.area }}
         	    </h1>
-        	    <p>{{ app.description }}</p>
+        	    <p>{{ model.description }}</p>
         	  </header>
       	    
           </article>

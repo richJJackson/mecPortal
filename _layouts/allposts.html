@@ -18,23 +18,24 @@
 
       <!-- One -->
       <section id="one">
-	<div class="inner">
+	      <div class="inner">
           {% for post in site.posts %}
-	  {% if post.title != 404 %}
-	  <header class="major">
-	    
-	    <h1>
-	    <a href="{{ site.baseurl }}/{{ post.url }}">
-      {{ post.title }}
-    </a>
-	    </h1>
-	  </header>
-	  {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
-	  {% if post.date %}<p>{{ post.date }}</p>{% endif %}
-	  <p>{{ post.description }}</p>
-	  {% endif %}
+      	  {% if post.title != 404 %}
+	  
+	          <header class="major">
+	      	    <h1>
+	            <a href="{{ site.baseurl }}/{{ post.url }}">
+              {{ post.title }}
+              </a>
+	            </h1>
+	          </header>
+    	   
+    	      {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
+    	      {% if post.date %}<p>{{ post.date }}</p>{% endif %}
+      	    <p>{{ post.description }}</p>
+      	  {% endif %}
           {% endfor %}
-	</div>
+	      </div>
       </section>
 
     </div>
