@@ -8,7 +8,6 @@ author: null
 show_tile: false
 ---
 
-Model Estimated Controls can use statistical models to generate couter-factual 
-evidence.  Find out how this can be useful to your research!
+
 
 
