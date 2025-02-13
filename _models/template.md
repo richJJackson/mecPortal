@@ -10,7 +10,12 @@ description:  A template of the information to include
 <!------>
 
 <!-- Setting -->
-# Setting 
+<div class="box">
+
+<h1 id="sett">Setting and Data</h1>
+
+<h2>Setting </h2>
+
 A quick description of the model setting is provided:  E.G. This model
 predicts the survival of patients with Hepatocellular Carcinoma (HCC) BCLC stage 
 B and treated with Trans Arterial Chemoembolisation (TACE).  The model has been 
@@ -18,20 +23,27 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
 
 <div class="row">
 	<div class="4u 12u$(medium)">
-		<h3> Patients </h3>
-		<p> Details on the Patients (e.g. inclusion/exclusion criteria from the 
-		study) </p>
+	  <div class="box">
+  		<h3> Patients </h3>
+  		<p> Details on the Patients (e.g. inclusion/exclusion criteria from the 
+  		study) </p>
+  	</div>	
 	</div>
 	<div class="4u 12u$(medium)">
+		  <div class="box">
 		<h3> Intervention </h3>
 		<p> How was the intervention delivered? </p>
+		  	</div>	
 	</div>
 	<div class="4u$ 12u$(medium)">
+		  <div class="box">
 		<h3> Outcome </h3>
 		<p> How is the Outcome defined?  E.G. Overall Survival measured as the time 
 		from randomisation until death by any cause </p>
+		  	</div>	
 	</div>
 </div>
+
 
 
 <!------>
@@ -39,7 +51,8 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
 
 
 <!-- Data -->
-<h1 id="data">Data</h1>
+
+<h2 id="data">Data</h2>
 
 <p> A description of the data used to generate the model </p>
 
@@ -127,11 +140,12 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
   </div>
 
 
-
+</div>
 <!------>
 <!------>
  
 <!-- Model -->
+<div class="box">
 <h1 id="data"> Model </h1>
 
 <p> A description of the data used to generate the model: </p>
@@ -223,13 +237,17 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
  </div>
   
 </div>
- 
+
+
+</div>
  <!------>
  <!------>
 
 
 <!-- Validation -->
-<h1 id="data"> Validataion </h1>
+<div class="box">
+
+<h1 id="valid"> Validataion </h1>
 
 <p> Details on the validation of the model: </p>
 
@@ -311,25 +329,31 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
    
   </div>
 
-
+</div>
 <!------>
 <!------>
 
-## Use this model!
+
+<div class="box">
+
+<h1 id="valid"> Use this model </h1>
 
 
 Download this model and learn how to use it by visiting 
 github/richJJackson/pscLibrary/test_model
 
+</div>
+<!------>
+<!------>
 
-<!------>
-<!------>
- 
-## References
+ <div class="box">
+<h1 id="valid"> References </h1>
+
+Details on the trial which provided the data for this model can be found at:
 
 Meyer T, Fox R, Ma YT, Ross PJ, James MW, Sturgess R, Stubbs C, Stocken DD, Wall 
 L, Watkinson A, Hacking N. Sorafenib in combination with transarterial 
 chemoembolisation in patients with unresectable hepatocellular carcinoma (TACE 
 2): a randomised placebo-controlled, double-blind, phase 3 trial. The lancet 
 Gastroenterology & hepatology. 2017 Aug 1;2(8):565-75.
-
+</div>

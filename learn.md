@@ -72,7 +72,6 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
-</section>
 
 	<section>
 		<a href="generic.html" class="image">
@@ -90,6 +89,7 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
+	
 </section>
 
 
