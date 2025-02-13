@@ -1,7 +1,7 @@
 ---
 title: Learn More!
 layout: landing
-description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
+description: Learn how Personalised Synthetic Controls work and find out how you can use them!
 image: assets/images/pic07.jpg
 nav-menu: true
 ---
@@ -73,6 +73,25 @@ nav-menu: true
 		</div>
 	</section>
 </section>
+
+	<section>
+		<a href="generic.html" class="image">
+			<img src="{% link assets/images/pic10.jpg %}" alt="" data-position="25% 25%" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3> Causal Inference </h3>
+				</header>
+				<p> Personalised Synthetic Controls can be a tools for causal inference - find out what makes them casual and what assumptions are required!</p>
+				<ul class="actions">
+					<li><a href="generic.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</section>
+
 
 <!-- Three -->
 <section id="three">
