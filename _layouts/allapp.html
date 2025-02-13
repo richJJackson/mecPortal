@@ -14,26 +14,42 @@
     
     <!-- Main -->
     <div id="main" class="alt">
+      
+     <!-- Banner -->
+    <section id="banner" class="minor">
+        <div class="inner">
+            <header class="minor">
+                <h1>Applications</h1>
+            </header>
+            <div class="content">
+                <p style="text-transform: uppercase;"> Discover how Personalised Synthetic Controls are used in practice! </p>
+            </div>
+        </div>
+    </section>
+
+    
 
       <!-- One -->
-      <section id="one" class="tiles">
-
+      <div id="tiles" class="alt">
+      <section id="modTiles" class="tiles">
           {% for app in site.applications %}
 	        {% if app.title != 404 %}
 	        <article>
+	          
         	  <header class="major">
         	    <h1>
         	      <a href="{{ site.baseurl }}/{{ app.url }}">
                 {{ app.title }} - {{ app.area }}
+                </a>
         	    </h1>
         	    <p>{{ app.description }}</p>
         	  </header>
-      	    
+        	  
           </article>
       	  {% endif %}
           {% endfor %}
-
       </section>
+    </div>
 
     </div>
 
