@@ -2,7 +2,7 @@
 title: Learn More!
 layout: landing
 description: Learn how Personalised Synthetic Controls work and find out how you can use them!
-image: assets/images/pic07.jpg
+image: assets/images/blackboard.jpg
 nav-menu: true
 ---
 

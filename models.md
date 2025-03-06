@@ -2,7 +2,7 @@
 layout: allmodels
 title: Models
 descripotion: Discover models which can be used for your research!
-image: assets/images/pic01.jpg
+image: assets/images/turing.jpg
 nav-menu: true
 ---
 

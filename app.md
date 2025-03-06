@@ -2,7 +2,7 @@
 layout: allapp
 title: Applications
 description: List of Applied Problems
-image: assets/images/pic11.jpg
+image: assets/images/enigma.jpg
 nav-menu: true
 ---
 

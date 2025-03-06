@@ -5,7 +5,7 @@ landing-title: 'All posts'
 description: Follow our development!
 nav-menu: true
 description: null
-image: null
+image: assets/images/notebook.jpg
 author: null
 ---
 
