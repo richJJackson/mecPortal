@@ -33,7 +33,7 @@ nav-menu: true
 				</header>
 				<p>Get Details on Personalised Synthetic Controls.  Learn how they are developed and how they work, including likelihood defintions and Bayesian Estimation procedures</p>
 				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
+					<li><a href="_learn/methods.html" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>

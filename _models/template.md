@@ -1,13 +1,12 @@
 ---
 layout: model
 title: TACE OS in HCC
-image: assets/images/TACE_km1.png
+image: assets/images/hcc.jpg
 area: tmpArea
 description:  A template of the information to include
 ---
 
-<!------>
-<!------>
+
 
 <!-- Setting -->
 <div class="box">
@@ -78,50 +77,71 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
 
   <!-- Table -->
   
-  <h4>Example Table of covariate summaries</h4>
+  <h4> Table of covariate summaries</h4>
   <div class="table-wrapper">
   	<table>
-  		<thead>
-  			<tr>
-  				<th>Name</th>
-  				<th>Description</th>
-  				<th>Price</th>
-  			</tr>
-  		</thead>
-  		<tbody>
-  			<tr>
-  				<td>Item1</td>
-  				<td>Ante turpis integer aliquet porttitor.</td>
-  				<td>29.99</td>
-  			</tr>
-  			<tr>
-  				<td>Item2</td>
-  				<td>Vis ac commodo adipiscing arcu aliquet.</td>
-  				<td>19.99</td>
-  			</tr>
-  			<tr>
-  				<td>Item3</td>
-  				<td> Morbi faucibus arcu accumsan lorem.</td>
-  				<td>29.99</td>
-  			</tr>
-  			<tr>
-  				<td>Item4</td>
-  				<td>Vitae integer tempus condimentum.</td>
-  				<td>19.99</td>
-  			</tr>
-  			<tr>
-  				<td>Item5</td>
-  				<td>Ante turpis integer aliquet porttitor.</td>
-  				<td>29.99</td>
-  			</tr>
-  		</tbody>
-  		<tfoot>
-  			<tr>
-  				<td colspan="2"></td>
-  				<td>100.00</td>
-  			</tr>
-  		</tfoot>
-  	</table>
+<caption>Covariates Summary</caption>
+ <thead>
+  <tr>
+   <th style="text-align:center;"> Variable </th>
+   <th style="text-align:center;"> Summary </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:center;"> Age </td>
+   <td style="text-align:center;"> 68.19 (7.69) </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> AFP </td>
+   <td style="text-align:center;"> 4.22 (2.48) </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Hepatitis B </td>
+   <td style="text-align:center;"> 0.15 (0.36) </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Hepatitis C </td>
+   <td style="text-align:center;"> 0.25 (0.43) </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Bilirubin </td>
+   <td style="text-align:center;"> 18.8 (14.14) </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Albumin </td>
+   <td style="text-align:center;"> 38.89 (4.28) </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Lesion1 </td>
+   <td style="text-align:center;"> 5.7 (3.73) </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Lesion2 </td>
+   <td style="text-align:center;"> 3.26 (1.93) </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Gender </td>
+   <td style="text-align:center;"> Female : 6, Male : 75 </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Cirrhosis </td>
+   <td style="text-align:center;"> 0 : 4, 1 : 77 </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Focality </td>
+   <td style="text-align:center;"> Multifocal : 75, Unifocal : 6 </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Vascular.invasion </td>
+   <td style="text-align:center;"> 0 : 81 </td>
+  </tr>
+  <tr>
+   <td style="text-align:center;"> Child.Pugh.grade </td>
+   <td style="text-align:center;"> A : 81 </td>
+  </tr>
+</tbody>
+</table>
   </div>
   
   <!-- End Table -->
@@ -175,59 +195,62 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
 
 <!-- Table -->
 	
-  <h4>Example Table of covariate summaries</h4>
+   <h4>Model Estimates and Standard Errors</h4> 
+
   <div class="modelTable">
   	
   	<table>
-      <thead>
-      <tr>
-       <th style="text-align:left;">   </th>
-       <th style="text-align:right;"> est </th>
-       <th style="text-align:right;"> se </th>
-      </tr>
-     </thead>
-    <tbody>
-      <tr>
-       <td style="text-align:left;"> gamma0 </td>
-       <td style="text-align:right;"> -3.148 </td>
-       <td style="text-align:right;"> 1.269 </td>
-      </tr>
-      <tr>
-       <td style="text-align:left;"> gamma1 </td>
-       <td style="text-align:right;"> 1.778 </td>
-       <td style="text-align:right;"> 0.395 </td>
-      </tr>
-      <tr>
-       <td style="text-align:left;"> gamma2 </td>
-       <td style="text-align:right;"> 0.031 </td>
-       <td style="text-align:right;"> 0.050 </td>
-      </tr>
-      <tr>
-       <td style="text-align:left;"> AFP </td>
-       <td style="text-align:right;"> 0.174 </td>
-       <td style="text-align:right;"> 0.043 </td>
-      </tr>
-      <tr>
-       <td style="text-align:left;"> Cirrhosis1 </td>
-       <td style="text-align:right;"> -0.389 </td>
-       <td style="text-align:right;"> 0.313 </td>
-      </tr>
-      <tr>
-       <td style="text-align:left;"> Albumin </td>
-       <td style="text-align:right;"> -0.070 </td>
-       <td style="text-align:right;"> 0.025 </td>
-      </tr>
-      <tr>
-       <td style="text-align:left;"> Lesion1 </td>
-       <td style="text-align:right;"> 0.025 </td>
-       <td style="text-align:right;"> 0.028 </td>
-      </tr>
-    </tbody>
-  </table>
+<!-- <caption>Model Estimates and Standard Errors</caption> -->
+ <thead>
+  <tr>
+      <th style="text-align:left;"> Parameter </th>
+   <th style="text-align:right;"> Estimate </th>
+   <th style="text-align:right;"> SE </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+      <td style="text-align:left;"> gamma0 </td>
+   <td style="text-align:right;"> -2.1373 </td>
+   <td style="text-align:right;"> 1.9048 </td>
+  </tr>
+  <tr>
+      <td style="text-align:left;"> gamma1 </td>
+   <td style="text-align:right;"> 1.8352 </td>
+   <td style="text-align:right;"> 0.4569 </td>
+  </tr>
+  <tr>
+     <td style="text-align:left;"> gamma2 </td>
+   <td style="text-align:right;"> 0.0614 </td>
+   <td style="text-align:right;"> 0.0602 </td>
+  </tr>
+  <tr>
+      <td style="text-align:left;"> AFP </td>
+   <td style="text-align:right;"> 0.1801 </td>
+   <td style="text-align:right;"> 0.0586 </td>
+  </tr>
+  <tr>
+      <td style="text-align:left;"> Cirrhosis1 </td>
+   <td style="text-align:right;"> -0.5538 </td>
+   <td style="text-align:right;"> 1.0464 </td>
+  </tr>
+  <tr>
+      <td style="text-align:left;"> Albumin </td>
+   <td style="text-align:right;"> -0.0867 </td>
+   <td style="text-align:right;"> 0.0371 </td>
+  </tr>
+  <tr>
+      <td style="text-align:left;"> Lesion1 </td>
+   <td style="text-align:right;"> 0.0221 </td>
+   <td style="text-align:right;"> 0.0438 </td>
+  </tr>
+</tbody>
+</table>
+
   </div>
   <!-- End Table -->
   <div>
-    <h3> Model Preduction</h3>
+    <h3> Model Prediction</h3>
     See how this model can be used to predict survival!
     <ul class="actions">
       <li><a href="#" class="button special">Rshiny</a></li>
@@ -247,12 +270,12 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
 <!-- Validation -->
 <div class="box">
 
-<h1 id="valid"> Validataion </h1>
+<h1 id="valid"> Validation </h1>
 
 <p> Details on the validation of the model: </p>
 
 
-<h3> Validatation Details </h3>
+<h3> Validation Details </h3>
 <div class="box">
 	<p> Provide some information on how the model is validated </p>
 </div>
@@ -262,55 +285,72 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
 
 	<div class="6u 12u$(medium)">
 
-  <h4>A table to provide Validation Details</h4>
+  <h4>Calibration Details</h4>
   
   <div class="table-wrapper">
   	<table>
-   <thead>
-    <tr>
-     <th style="text-align:left;">   </th>
-     <th style="text-align:right;"> est </th>
-     <th style="text-align:right;"> se </th>
-    </tr>
-   </thead>
-  <tbody>
-    <tr>
-     <td style="text-align:left;"> gamma0 </td>
-     <td style="text-align:right;"> -3.148 </td>
-     <td style="text-align:right;"> 1.269 </td>
-    </tr>
-    <tr>
-     <td style="text-align:left;"> gamma1 </td>
-     <td style="text-align:right;"> 1.778 </td>
-     <td style="text-align:right;"> 0.395 </td>
-    </tr>
-    <tr>
-     <td style="text-align:left;"> gamma2 </td>
-     <td style="text-align:right;"> 0.031 </td>
-     <td style="text-align:right;"> 0.050 </td>
-    </tr>
-    <tr>
-     <td style="text-align:left;"> AFP </td>
-     <td style="text-align:right;"> 0.174 </td>
-     <td style="text-align:right;"> 0.043 </td>
-    </tr>
-    <tr>
-     <td style="text-align:left;"> Cirrhosis1 </td>
-     <td style="text-align:right;"> -0.389 </td>
-     <td style="text-align:right;"> 0.313 </td>
-    </tr>
-    <tr>
-     <td style="text-align:left;"> Albumin </td>
-     <td style="text-align:right;"> -0.070 </td>
-     <td style="text-align:right;"> 0.025 </td>
-    </tr>
-    <tr>
-     <td style="text-align:left;"> Lesion1 </td>
-     <td style="text-align:right;"> 0.025 </td>
-     <td style="text-align:right;"> 0.028 </td>
-    </tr>
-  </tbody>
-  </table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Metric </th>
+   <th style="text-align:right;"> Value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> C-index </td>
+   <td style="text-align:right;"> 0.2895377 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Calibration Slope </td>
+   <td style="text-align:right;"> 0.9827559 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Calibration Slope SE </td>
+   <td style="text-align:right;"> 0.2402236 </td>
+  </tr>
+</tbody>
+</table>
+
+<h4>Discrimination Details</h4>
+  
+  <div class="table-wrapper">
+    <table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Risk Group </th>
+   <th style="text-align:right;"> Coefficient </th>
+   <th style="text-align:right;"> SE (Coef) </th>
+   <th style="text-align:right;"> Z-value </th>
+   <th style="text-align:right;"> P-value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Medium-Low </td>
+   <td style="text-align:right;"> 0.3462284 </td>
+   <td style="text-align:right;"> 0.4426802 </td>
+   <td style="text-align:right;"> 0.7821186 </td>
+   <td style="text-align:right;"> 0.4341449 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Medium-High </td>
+   <td style="text-align:right;"> 1.1493102 </td>
+   <td style="text-align:right;"> 0.4519407 </td>
+   <td style="text-align:right;"> 2.5430551 </td>
+   <td style="text-align:right;"> 0.0109888 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> High </td>
+   <td style="text-align:right;"> 1.3859891 </td>
+   <td style="text-align:right;"> 0.4313030 </td>
+   <td style="text-align:right;"> 3.2134929 </td>
+   <td style="text-align:right;"> 0.0013113 </td>
+  </tr>
+</tbody>
+</table>
+
+      
+
   </div>
 
   </div>
@@ -321,12 +361,12 @@ generated on the data from the TACE + Placebo arm from the TACE 2 trials.
 
   Some text to describe the validation output
 
-  <span class="image fit"><img src="{% link assets/images/TACE_km1.png %}" alt="" /></span>
+  <span class="image fit"><img src="{% link assets/images/Calibration.png %}" alt="" /></span>
 
 
    </div>
 
-   
+   git push origin master
   </div>
 
 </div>
