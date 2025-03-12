@@ -23,8 +23,8 @@ nav-menu: true
 <section id="two" class="spotlights">
 
 	<section>
-		<a href="generic.html" class="image">
-			<img src="{% link assets/images/pic08.jpg %}" alt="" data-position="center center" />
+		<a href="learn/methods_land.html" class="image">
+			<img src="{% link assets/images/modelPlane.jpg %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -33,15 +33,15 @@ nav-menu: true
 				</header>
 				<p>Get Details on Personalised Synthetic Controls.  Learn how they are developed and how they work, including likelihood defintions and Bayesian Estimation procedures</p>
 				<ul class="actions">
-					<li><a href="_learn/methods.html" class="button">Learn more</a></li>
+					<li><a href="learn/methods_land.html" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
 	</section>
 	
 	<section>
-		<a href="generic.html" class="image">
-			<img src="{% link assets/images/pic09.jpg %}" alt="" data-position="top center" />
+		<a href="learn/software_land.html" class="image">
+			<img src="{% link assets/images/code.jpg %}" alt="" data-position="top center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -50,32 +50,32 @@ nav-menu: true
 				</header>
 				<p> Explore the packages developed to use Personalised Synthetic Controls and learn how they are used</p>
 				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
+					<li><a href="learn/software_land.html" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
 	</section>
 	
 	<section>
-		<a href="generic.html" class="image">
-			<img src="{% link assets/images/pic10.jpg %}" alt="" data-position="25% 25%" />
+		<a href="learn/howto_land.html" class="image">
+			<img src="{% link assets/images/maze.jpg %}" alt="" data-position="25% 25%" />
 		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3> Teaching Materials </h3>
+					<h3> How To... </h3>
 				</header>
-				<p> Presentations and recorded sessions to introduce Personalised Synthetic Controls and their use</p>
+				<p> Detials and user guides on how to use Synthetic Controls in practice </p>
 				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
+					<li><a href="learn/howto_land.html" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
 	</section>
 
 	<section>
-		<a href="generic.html" class="image">
-			<img src="{% link assets/images/pic10.jpg %}" alt="" data-position="25% 25%" />
+		<a href="learn/causal_land.html" class="image">
+			<img src="{% link assets/images/domino.jpg %}" alt="" data-position="25% 25%" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -84,7 +84,7 @@ nav-menu: true
 				</header>
 				<p> Personalised Synthetic Controls can be a tools for causal inference - find out what makes them casual and what assumptions are required!</p>
 				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
+					<li><a href="learn/causal_land.html" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>

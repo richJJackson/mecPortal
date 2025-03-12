@@ -30,6 +30,8 @@ collections:
     output: true
   applications:
     output: true
+  learn:
+    output: true
 
 
 exclude:
