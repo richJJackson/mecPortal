@@ -1,6 +1,6 @@
 ---
 layout: app
-title:  TACE Vs SIRT
+title:  Predicting Phase III outcome from Phase II trials
 area: HCC
 description:  A template of an applied PSC problem
 ---

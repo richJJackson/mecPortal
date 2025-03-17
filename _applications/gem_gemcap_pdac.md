@@ -1,7 +1,7 @@
 ---
 layout: app
-title:  TACE Vs SIRT
-area: HCC
+title: Gemcitabine Vs Gemcitabine plus Capecitabine
+area: PDAC
 description:  A template of an applied PSC problem
 ---
 

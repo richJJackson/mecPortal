@@ -1,7 +1,7 @@
 ---
 layout: app
-title:  TACE Vs SIRT
-area: HCC
+title: GemCis Vs Gem Mono in BTC
+area: BTC
 description:  A template of an applied PSC problem
 ---
 

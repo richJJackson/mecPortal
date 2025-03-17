@@ -1,6 +1,6 @@
 ---
 layout: app
-title:  TACE Vs SIRT
+title: Designing prospective Trials with MEC
 area: HCC
 description:  A template of an applied PSC problem
 ---
