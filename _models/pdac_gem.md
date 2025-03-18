@@ -90,12 +90,20 @@ case report forms of the ESPAC-3 study and included T stage, N stage, Resection
 Margin Status, Local Invasion, WHO status, Tumor Grade (Differentiation), Tumour
 Size, pre-operative CA19.9 and post-operative CA19.9</p>
 
+
+<p> The dataset included 359 patients of whom 309 (86%) observed an event (died). 
+Median Overall Survival (95% CI) was 23.2 (21.1 - 25.8) months.
+
 <div class="row 200%">
 	
 	<div class="6u 12u$(medium)">
 
   <!-- Table -->
 		<h4>Covariates</h4>
+
+    <p> The covariates selected for inclusion in the model were T stage, Tumour 
+    Grade, Lymph Nodes and (log) CA19.9.
+    </p>
       <div class="table-wrapper">
       <table>
        <thead>
@@ -158,24 +166,20 @@ Size, pre-operative CA19.9 and post-operative CA19.9</p>
         </tr>
       </tbody>
       </table>
-            
-      
+
       </div>
-  
+  </div>
   <!-- End Table -->
   
-  </div>
+
   
   <div class="6u 12u$(medium)">
     <!-- Image -->
     <h3>Model covariates</h3>
-    Details of the covariates used to generate the model are:
     <span class="image fit"><img src="{% link assets/images/e3_data.png %}" alt="" /></span>
-    </div>
+  </div>
      <!-- End Image -->
   </div>
-
-</div>
 
 
 
@@ -191,21 +195,29 @@ Size, pre-operative CA19.9 and post-operative CA19.9</p>
 <div class="box">
 <h1 id="data"> Model </h1>
 
-<p> A description of the data used to generate the model: </p>
+<p> The model consturcuted was a flexible parametric survival model using a 
+spline function to model the underlying cumulative hazard function.  Three 
+internal knots were chosen which gave sufficient flexibility.
+</p>
 
 <div class="row 200%">
 	
 	<div class="6u 12u$(medium)">
     <h3> Model Construction </h3>
     <div class="box">
-    	<p> Include details here about the process of fitting the model.  E.G. 
-    	backwards stepwise procedure based on model AIC </p>
+    	<p> 
+The model was constructed using a backwards stepwise procedure using
+Akaikes Information Criterion (AIC) to evaluate model fit.  Initaily, a 'null' 
+model constructed using all covaraites, irrespective of univariable significance, 
+was constructed and single terms removed in an itterative fashion.  </p>
     </div>
     
     <!-- Image -->
     <div>
       <h3>Model Fit</h3>
-      Some text to describe what is provided
+      Overall fit of the model is demonstrated by plotting the unadjusted 
+      survival estimates against the model obtained by applying the mean
+      linear predictor.
       <span class="image fit"><img src="{% link assets/images/e3_gem_fpm.png %}" alt="" /></span>
     </div>
   
@@ -232,7 +244,7 @@ Size, pre-operative CA19.9 and post-operative CA19.9</p>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> gamma0 </td>
+   <td style="text-align:left;"> $/gamma$ </td>
    <td style="text-align:left;"> -10.18 (1.08) </td>
    <td style="text-align:left;"> 0 (0 - 0) </td>
   </tr>
@@ -319,10 +331,20 @@ Size, pre-operative CA19.9 and post-operative CA19.9</p>
 
 <p> Details on the validation of the model: </p>
 
+Internal Validation is performed by assessing how well the model performs on the 
+training dataset.
 
 <h3> Validation Details </h3>
 <div class="box">
-	<p> Provide some information on how the model is validated </p>
+	<p> Validation are reported in terms of Calibration and Discrimination.  
+	Calibration is reported int erms of the Mallows C-Statistic and by regressing 
+	the fitted linear predictor against the outcome (Slope).
+	
+	Discrimination is evaluated by categroising patietns into 4 risk groups.  
+	Risk groups are deteimented by the quartiles of the linear predictor and 
+	compared grapically and by evaluating the relative risk by fitting a 
+	univariable Cox Proportional Hazards Models
+	</p>
 </div>
 
 
@@ -397,7 +419,7 @@ Size, pre-operative CA19.9 and post-operative CA19.9</p>
   	<div class="6u 12u$(medium)">
   	  <!-- Image -->
 
-  Some text to describe the validation output
+  Kaplan Meier plot to show survival estimates within each of the 4 risk groups
 
   <span class="image fit"><img src="{% link assets/images/e3_gem_discr.png %}" alt="" /></span>
 
