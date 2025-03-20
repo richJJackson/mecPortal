@@ -1,7 +1,7 @@
 ---
 layout: model
 title: Gemcitabine OS
-image: assets/images/hcc.jpg
+image: assets/images/pancStock.png
 area: PDAC
 description:  A model to describe overall survival in patietns with aHCC
 ---
@@ -437,13 +437,22 @@ training dataset.
 
 <div class="box">
 
-<h1 id="valid"> Use this model </h1>
+<h1 id="valid"> How to use this model </h1>
 
+<p> 
+Find out how we use this model to compare Gemcitbine against another therapy
+GemCap to help decide which treatment is best!
+</p>
 
+<p>
 Download this model and learn how to use it by visiting 
-github/richJJackson/pscLibrary/test_model
+https://github.com/richJJackson/pscLibrary/tree/main/PDAC/GemVsGemCap
+</p>
 
 </div>
+
+
+
 
 <!------------------------>
 <!------------------------>
