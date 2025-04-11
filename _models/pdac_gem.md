@@ -99,75 +99,77 @@ Median Overall Survival (95% CI) was 23.2 (21.1 - 25.8) months.
 	<div class="6u 12u$(medium)">
 
   <!-- Table -->
-		<h4>Covariates</h4>
+		<h3>Model Covariates</h3>
 
     <p> The covariates selected for inclusion in the model were T stage, Tumour 
     Grade, Lymph Nodes and (log) CA19.9.
     </p>
+    
+    
       <div class="table-wrapper">
       <table>
-       <thead>
-        <tr>
-         <th style="text-align:left;"> Covariate </th>
-         <th style="text-align:left;"> Level </th>
-         <th style="text-align:left;"> All Pts. </th>
-        </tr>
-       </thead>
-      <tbody>
-        <tr>
-         <td style="text-align:left;"> Total </td>
-         <td style="text-align:left;">  </td>
-         <td style="text-align:left;"> 359 </td>
-        </tr>
-        <tr>
-         <td style="text-align:left;"> T Stage </td>
-         <td style="text-align:left;"> 2 </td>
-         <td style="text-align:left;"> 27 (100%) </td>
-        </tr>
-        <tr>
-         <td style="text-align:left;"> T Stage </td>
-         <td style="text-align:left;"> 3 </td>
-         <td style="text-align:left;"> 78 (100%) </td>
-        </tr>
-        <tr>
-         <td style="text-align:left;"> T Stage </td>
-         <td style="text-align:left;"> 4 </td>
-         <td style="text-align:left;"> 254 (100%) </td>
-        </tr>
-        <tr>
-         <td style="text-align:left;"> Tumor Grade </td>
-         <td style="text-align:left;"> 1 </td>
-         <td style="text-align:left;"> 53 (100%) </td>
-        </tr>
-        <tr>
-         <td style="text-align:left;"> Tumor Grade </td>
-         <td style="text-align:left;"> 2 </td>
-         <td style="text-align:left;"> 223 (100%) </td>
-        </tr>
-        <tr>
-         <td style="text-align:left;"> Tumor Grade </td>
-         <td style="text-align:left;"> 3 </td>
-         <td style="text-align:left;"> 83 (100%) </td>
-        </tr>
-        <tr>
-         <td style="text-align:left;"> Lymph Node </td>
-         <td style="text-align:left;"> 1 </td>
-         <td style="text-align:left;"> 105 (100%) </td>
-        </tr>
-        <tr>
-         <td style="text-align:left;"> Lymph Node </td>
-         <td style="text-align:left;"> 2 </td>
-         <td style="text-align:left;"> 254 (100%) </td>
-        </tr>
-        <tr>
-         <td style="text-align:left;"> (log) CA19.9 </td>
-         <td style="text-align:left;"> median (IQR) </td>
-         <td style="text-align:left;"> 3.332 (2.398, 4.256) </td>
-        </tr>
-      </tbody>
-      </table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> **Characteristic** </th>
+   <th style="text-align:left;"> **N = 359** </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> t </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> 27 (7.5%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> 78 (22%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> 254 (71%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> grade </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> 53 (15%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> 223 (62%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> 83 (23%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> nodes </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> 105 (29%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> 254 (71%) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> lca199 </td>
+   <td style="text-align:left;"> 3.33 (2.40, 4.26) </td>
+  </tr>
+</tbody>
+</table>
 
       </div>
+      
+      
+      
   </div>
   <!-- End Table -->
   
@@ -175,7 +177,6 @@ Median Overall Survival (95% CI) was 23.2 (21.1 - 25.8) months.
   
   <div class="6u 12u$(medium)">
     <!-- Image -->
-    <h3>Model covariates</h3>
     <span class="image fit"><img src="{% link assets/images/e3_data.png %}" alt="" /></span>
   </div>
      <!-- End Image -->
@@ -331,8 +332,11 @@ was constructed and single terms removed in an itterative fashion.  </p>
 
 <p> Details on the validation of the model: </p>
 
+<p>
 Internal Validation is performed by assessing how well the model performs on the 
 training dataset.
+</p>
+
 
 <h3> Validation Details </h3>
 <div class="box">
@@ -437,16 +441,20 @@ training dataset.
 
 <div class="box">
 
-<h1 id="valid"> How to use this model </h1>
+<h1 id="valid"> Use this model </h1>
 
 <p> 
-Find out how we use this model to compare Gemcitbine against another therapy
-GemCap to help decide which treatment is best!
+This model is available to download [here](https://github.com/richJJackson/pscLibrary/tree/main/PDAC/Gem_model)
 </p>
 
 <p>
-Download this model and learn how to use it by visiting 
-https://github.com/richJJackson/pscLibrary/tree/main/PDAC/GemVsGemCap
+Find out more about how models are stored/shared and how you can use them [here](https://github.com/richJJackson/pscLibrary/tree/main/PDAC/Gem_model)
+</p>
+
+
+<p>
+This model has been used to compare the combined therapy GemCap against Gem. 
+Find out how [here](https://github.com/richJJackson/pscLibrary/tree/main/PDAC/Gem_Vs_GemCap)
 </p>
 
 </div>
