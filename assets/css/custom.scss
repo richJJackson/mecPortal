@@ -40,11 +40,60 @@
     box-shadow: 0 6px 16px rgba(0,0,0,0.08); /* subtle depth */
     transition: transform 0.35s ease, box-shadow 0.35s ease;
     background-color: #ffffff;   /* tiles “float” on background */
-    flex: 1 1 300px;             /* responsive width with min 300px */
-    max-width: 32%;              /* 3 tiles per row on desktop */
+    flex: 1 1 calc(33.333% - 2em);   /* 3 per row accounting for gap */
+    max-width: calc(33.333% - 2em);
     display: flex;
     flex-direction: column;
 }
+
+
+/* ===========================================
+   Applications page: Modern Tiles: Rounded Corners + Long Text
+   =========================================== */
+
+#allapp.tiles article {
+    border-radius: 10px;            /* keep soft corners */
+    overflow: hidden;               /* clips shadows and inner edges */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    flex: 1 1 calc(33.333% - 2em);
+    max-width: calc(33.333% - 2em);
+}
+
+#allapp.tiles article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* Inner container allows text to overflow naturally */
+#allapp.tile-inner {
+    padding: 1.5em;
+    overflow: visible;             /* important: long descriptions show */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Header and paragraph tweaks */
+#allapp.tiles article header h4 {
+    margin-bottom: 0.5em;
+    font-size: 1.1rem;
+}
+
+#allapp.tiles article header p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-transform: none;          /* readable casing */
+}
+
+/* ===========================================
+   Rest of tiles (on home page)
+   =========================================== */
+
 
 /* Tile hover interaction */
 .tiles article:hover {
@@ -149,6 +198,16 @@ body #main.alt {
     color: #222;
 }
 
+/* Model page images — show original PNG exactly */
+#model section .image img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100%;
+    max-height: none !important;
+    object-fit: unset !important;
+}
+
+
 /* ===========================================
    Convert Spotlights Into Grid Cards
    =========================================== */
@@ -161,7 +220,7 @@ body #main.alt {
 }
 
 /* Remove default alternating behaviour */
-.spotlights > section {
+#modTiles.spotlights > section {
     display: block !important;
     background: #ffffff;
     border-radius: 14px;
@@ -171,23 +230,23 @@ body #main.alt {
 }
 
 /* Hover lift */
-.spotlights > section:hover {
+#modTiles.spotlights > section:hover {
     transform: translateY(-6px);
     box-shadow: 0 18px 38px rgba(0,0,0,0.08);
 }
 
 /* Remove Forty overlay */
-.spotlights > section:before {
+#modTiles.spotlights > section:before {
     display: none !important;
 }
 
 /* Image styling */
-.spotlights > section .image {
+#modTiles.spotlights > section .image {
     display: block;
     width: 100%;
 }
 
-.spotlights > section .image img {
+#modTiles.spotlights > section .image img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -195,39 +254,52 @@ body #main.alt {
 }
 
 /* Content padding */
-.spotlights > section .content {
+#modTiles.spotlights > section .content {
     width: 100% !important;
 }
 
-.spotlights > section .inner {
+#modTiles.spotlights > section .inner {
     padding: 1.8em;
 }
 
 /* Typography */
-.spotlights h3 {
+#modTiles.spotlights h3 {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.6em;
 }
 
-.spotlights p {
+#modTiles.spotlights p {
     font-size: 1.05rem;
     line-height: 1.6;
     color: #555;
 }
 
 /* Cleaner links */
-.spotlights h3 a {
+#modTiles.spotlights h3 a {
     text-decoration: none;
     color: #111;
     transition: color 0.2s ease;
 }
 
-.spotlights h3 a:hover {
+#modTiles.spotlights h3 a:hover {
     color: #007acc;
 }
 
+/* Stop Forty flex layout inside grid cards */
+#modTiles.spotlights > section {
+    display: block !important;
+}
 
+#modTiles.spotlights > section > .content {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+#modTiles.spotlights > section > .content > .inner {
+    width: 100% !important;
+}
 
 /* Compact content images */
 #main section .image img {
@@ -240,99 +312,190 @@ body #main.alt {
 }
 
 /* Compact card content */
-section .inner {
+#main section .inner {
     padding: 1em 1em;   /* reduce vertical and horizontal padding */
 }
 
-section h3 {
+#main section h3 {
     font-size: 1.2rem;    /* slightly smaller headings */
     margin-bottom: 0.4em;
 }
 
-section p {
+#main section p {
     font-size: 1.05rem;  /* smaller paragraph text */
     line-height: 1.4;   /* tighter spacing */
     margin-bottom: 0.6em;
 }
 
-/* ===========================================
-   Landing Page Content Cards - Compact Grid
-   =========================================== */
+/* ===== Concept Section → Modern Grid Cards ===== */
 
-/* Grid layout for landing page cards */
-body > section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-    gap: 1.5em;
-    max-width: 90%;
-    margin: 2em auto;
+/* Remove spotlight side layout */
+#concept.spotlights {
+    display: block;
 }
 
-/* Individual cards */
-body > section > .inner,
-body > section {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+#concept.spotlights > section {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;        /* stack image + text */
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for cards */
-body > section:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+/* Hover lift */
+#concept.spotlights > section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
 }
 
-/* Card images */
-body > section .image img {
+/* Image styling */
+#concept .image {
     width: 100%;
-    height: 150px;          /* compact height */
-    object-fit: cover;      /* fill nicely */
-    display: block;
-    border-radius: 12px 12px 0 0;
 }
 
-/* Card content */
-body > section .inner {
-    padding: 0.8em 1em;
-    display: flex;
-    flex-direction: column;
+#concept .image img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;   /* use cover if you want cropping */
+    background: #f8f9fb;
+    padding: 2rem;
 }
 
-body > section h3 {
-    font-size: 1rem;
-    margin-bottom: 0.4em;
-    font-weight: 600;
+/* Content area */
+#concept .content {
+    width: 100%;
+    padding: 0.7rem 1.8rem;
+    text-align: left;
 }
 
-body > section p {
+#concept h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#concept p {
     font-size: 1.05rem;
-    line-height: 1.3;
-    margin: 0;
-    color: #555;
+    line-height: 1.6;
+    opacity: 0.85;
 }
 
-/* Responsive adjustments */
+/* Section title styling */
+#concept > h2 {
+    text-align: left;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+/* Mobile tweak */
 @media screen and (max-width: 768px) {
-    body > section {
-        grid-template-columns: 1fr; /* stack cards on mobile */
+    #concept .image img {
+        height: 220px;
+        padding: 1rem;
     }
 
-    body > section .image img {
-        height: auto;            /* natural image height on mobile */
+    #concept .content {
+        padding: 1.8rem;
     }
 }
 
 
-/* ===========================================
-   Landing Page Text Size Adjustments
-   =========================================== */
 
-/* Paragraphs inside sections */
-section p {
-    font-size: 1.05rem;       /* increase text size */
-    line-height: 1.6;      /* keep spacing readable */
+
+
+/* ===== Estimation Section → Modern Grid Cards ===== */
+
+/* Remove spotlight side layout */
+#Estimation.spotlights {
+    display: block;
+}
+
+#Estimation.spotlights > section {
+    display: flex;
+    flex-direction: column;        /* stack image + text */
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover lift */
+#Estimation.spotlights > section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+/* Image styling */
+#Estimation .image {
+    width: 100%;
+}
+
+#Estimation .image img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;   /* use cover if you want cropping */
+    background: #f8f9fb;
+    padding: 2rem;
+}
+
+/* Content area */
+#Estimation .content {
+    width: 100%;
+    padding: 0.7rem 1.8rem;
+    text-align: left;
+}
+
+#Estimation h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#Estimation p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+/* Section title styling */
+#Estimation > h2 {
+    text-align: left;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+/* Mobile tweak */
+@media screen and (max-width: 768px) {
+    #Estimation .image img {
+        height: 220px;
+        padding: 1rem;
+    }
+
+    #Estimation .content {
+        padding: 1.8rem;
+    }
+}
+
+
+/* Make tiles full width on this page */
+#main.alt .inner {
+    max-width: 1200px;  /* or whatever wider width you want */
+}
+
+/* Tiles container */
+#main.alt .tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;  /* center them in the wider container */
+    width: 100%;
+}
+
+/* Each tile: 3 per row */
+#main.alt .tiles article {
+    flex: 1 1 calc(33.333% - 2em);
+    max-width: calc(33.333% - 2em);
 }
