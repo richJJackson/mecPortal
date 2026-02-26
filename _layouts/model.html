@@ -17,14 +17,19 @@
                 <span class="image">
                     <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
                 </span>
+				
+				<div class="overlay"></div>
+				
                 <header class="major">
 
-                    <h1>{{ page.title }}</h1>
+
+                    <h1 class="hero-title">{{ page.title }}</h1>
 
                 </header>
-                <div class="content">
+                <div class="content hero-content">
 
-                    {{ page.description }}
+                    <p>{{ page.description }}</p>
+					<a href="#one" class="button primary large">Learn More</a>
 
                 </div>
             </div>
@@ -46,6 +51,248 @@
 
     {% include footer.html %}
 
+<style>
+
+/* -------------------------
+   GLOBAL STYLING
+--------------------------*/
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.box {
+  padding: 40px;
+  margin-bottom: 60px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+p {
+  color: #444;
+}
+
+/* -------------------------
+   HERO SECTION
+--------------------------*/
+
+.hero {
+  padding: 80px 40px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f4f7fb 0%, #eaf1f8 100%);
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero .subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.hero-stats div {
+  font-size: 0.95rem;
+}
+
+.hero-stats strong {
+  font-size: 1.6rem;
+  display: block;
+}
+
+/* -------------------------
+   SECTION NAV
+--------------------------*/
+
+.section-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.section-nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.section-nav a:hover {
+  color: #007acc;
+}
+
+/* -------------------------
+   CARDS
+--------------------------*/
+
+.card {
+  padding: 25px;
+  border-radius: 10px;
+  background: #f8f8f8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-bottom: 20px;
+}
+
+/* -------------------------
+   TABLES
+--------------------------*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th {
+  background-color: #f2f5f8;
+  font-weight: 600;
+}
+
+td, th {
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background-color: #fafafa;
+}
+
+/* -------------------------
+   METRICS (VALIDATION)
+--------------------------*/
+
+.metric-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  text-align: center;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.metric h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.metric p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* -------------------------
+   CTA SECTION
+--------------------------*/
+
+.cta {
+  padding: 60px;
+  text-align: center;
+  border-radius: 16px;
+  background: #f4f7fb;
+  margin-top: 60px;
+}
+
+.cta h2 {
+  margin-bottom: 15px;
+}
+
+.cta p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* -------------------------
+   IMAGES
+--------------------------*/
+
+img {
+  border-radius: 2px;
+}
+
+/* -------------------------
+   RESPONSIVE
+--------------------------*/
+
+@media (max-width: 768px) {
+  .hero-stats {
+    gap: 30px;
+  }
+
+  .metric-row {
+    gap: 30px;
+  }
+}
+
+</style>
+
+<script>
+/* Automatically convert certain sections to cards + metrics */
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  // Convert small inner boxes to cards
+  document.querySelectorAll(".box .box").forEach(function(el){
+    el.classList.remove("box");
+    el.classList.add("card");
+  });
+
+  // Add metric styling automatically to validation table if found
+  const validSection = document.querySelector("#valid");
+  if(validSection){
+    const tables = validSection.parentElement.querySelectorAll("table");
+    if(tables.length > 0){
+      const firstTable = tables[0];
+      const rows = firstTable.querySelectorAll("tbody tr");
+
+      if(rows.length >= 3){
+        const metricContainer = document.createElement("div");
+        metricContainer.className = "metric-row";
+
+        rows.forEach(function(row){
+          const cols = row.querySelectorAll("td");
+          if(cols.length >= 2){
+            const metric = document.createElement("div");
+            metric.className = "metric";
+            metric.innerHTML = "<h2>" + cols[1].innerText + "</h2><p>" + cols[0].innerText + "</p>";
+            metricContainer.appendChild(metric);
+          }
+        });
+
+        firstTable.parentElement.insertBefore(metricContainer, firstTable);
+        firstTable.style.display = "none";
+      }
+    }
+  }
+
+});
+</script>
 
 </body>
 
