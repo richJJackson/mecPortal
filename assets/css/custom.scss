@@ -581,6 +581,25 @@ body #main.alt {
 }
 
 
+/* make different type of cards */
+
+.flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.flex-cards > section {
+    flex: 1 1 45%; /* two cards per row, shrink/grow */
+    min-width: 280px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 /* =========================================
