@@ -33,7 +33,7 @@ description: How do Model Estimated Controls work?
 
 
 <section id="introduction" class="level2">
-<div class="box" style="background-color:#9678b6;">
+<div class="box">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>To use the psc package you need to have two things:</p>
 <ul>
@@ -44,7 +44,7 @@ description: How do Model Estimated Controls work?
 </div>
 </section>
 <section id="data" class="level2">
-<div class="box" style="background-color:#915c83 ;">
+<div class="box">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
 <p>Let’s load in our data and view it…</p>
 <div class="cell">
@@ -63,7 +63,7 @@ description: How do Model Estimated Controls work?
 </div>
 </section>
 <section>
-<div class="box" style="background-color:#8d4e85 ;">
+<div class="box">
 <p>We should also load in the model and view the data that was used to build the model…</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;flsm.R&quot;</span>)</span>
@@ -81,7 +81,7 @@ description: How do Model Estimated Controls work?
 </div>
 </section>
 <section>
-<div class="box" style="background-color:#58427c ;">
+<div class="box">
 <p>Note that the time and event variables are encoded as ‘time’ and ‘cen’ in both the model and the data cohort. This is key for when we want to make our comparison.</p>
 <p>We should also check that the categorical variables have class factor and are dummy encoded, and that continuous variables are class numeric in the data cohort.</p>
 <div class="cell">
@@ -114,7 +114,7 @@ description: How do Model Estimated Controls work?
 </section>
 
 <section id="take-homes" class="level2">
-<div class="box" style="background-color:#702963;">
+<div class="box">
 <h2 class="anchored" data-anchor-id="take-homes">Take homes</h2>
 <ul>
 <li><p>Ensure you have a statistical model and a data cohort.</p></li>
@@ -549,3 +549,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 </body>
+
+
+<style>
+.box {
+  padding: 40px;
+  margin-bottom: 60px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+}
+</style>
