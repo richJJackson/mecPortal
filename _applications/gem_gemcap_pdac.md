@@ -19,17 +19,20 @@ had they been treated with GEM. </p>
   </ul>
 </div>
 
-<div class="box" style="background-color:#8878c3;">
+<div class="box collapsible-section">
 
-<h2 id="sett">Data</h2>
+<div class="section-header">
+<h2 id="data">Data</h2>
+</div>
 
+<div class="section-content">
 <h3 id="data">Data cohort for comparison against the CFM </h3>
 <p>Observed patient data, to compare against the CFM, were taken from the European Study Group for PAncreatic Cancer
 (ESPAC-4) Study- A randomised  controlled phase III trial that compared
 the effect of adjuvant combination chemotherapy of gemcitabine and 
 capecitabine (GEMCAP) versus monotherapy gemcitabine (GEM) in patients 
 with resected pancreatic ductal adenocarcinoma. </p>
-<div class="box">
+
   <div class="row">
   	
   	<div class="6u 12u$(medium)">
@@ -65,12 +68,17 @@ with resected pancreatic ductal adenocarcinoma. </p>
   		</div>	
   	</div>
   </div>
+
 </div>
 </div>
 
-<div class= "box" style="background-color:#b284be;">
+<div class= "box collapsible-section">
 
+<div class="section-header">
 <h2 id="desc"> Description of model </h2>
+</div>
+
+<div class="section-content">
 <h3 id="cfm"> Gemcitabine CFM </h3>
 <p>
 The GEM CFM model (developed on the ESPAC-3 data) was used to generate counterfactual evidence had the ESPAC-4 data
@@ -85,11 +93,16 @@ The GEM model and the details of the data used to build the model can be found
 <a href="../models/pdac_gem.html">here</a>
 </p>
 
-
+</div>
 </div>
 
-<div class = "box" style="background-color:#796878;">
+<div class = "box collapsible-section">
+
+<div class="section-header">
 <h2 id="Analysis"> Analysis </h2>
+</div>
+
+<div class="section-content">
 <p> 
 A counterfactual model and a data cohort were used to make a comparison of treatment
 efficacy.
@@ -169,13 +182,17 @@ efficacy.
 </div>
 </body>
 </div>
+</div>
 
 
+<div class = "box collapsible-section">
 
-<div class = "box" style="background-color:#b784a7;">
+<div class="section-header">
 <h2 id="Sub-group"> Sub-group analysis </h2>
-<body>
+</div>
 
+<div class="section-content">
+<body>
 <div class="box">
 The comparison of treatment efficacy can also be estimated within individual sub-groups.
 Sub-group analyses is carried out by filtering for a specific sub-group of patients from
@@ -210,9 +227,15 @@ is then made on the sub-group of patients.
  
 </body>
 </div>
+</div>
 
-<div class = "box" style="background-color:#856088;">
+<div class = "box collapsible-section">
+
+<div class="section-header">
 <h2 id="conclusion"> Conclusions </h2>
+</div>
+
+<div class="section-content">
 <p>
 CFMs can be used to predict and compare patient level outcomes. <br>
 In this example, we used a data-cohort of patients that
@@ -227,10 +250,16 @@ Sub-group effects can be looked at by only including patients within a certain g
 in the data cohort.
 </p>
 </div>
+</div>
 
 
-<div class="box" style="background-color:#5d3954;">
-<h1 id="valid"> References </h1> 
+<div class="box collapsible-section">
+
+<div class="section-header">
+<h2 id="valid"> References </h2> 
+</div>
+
+<div class="section-content">
 <p>
 Details on the ESPAC-4 trial from which the data cohort were taken from can be found at: <br>
 <a href="https://www.sciencedirect.com/science/article/pii/S0140673616324096?via%3Dihub">
@@ -244,6 +273,7 @@ randomised, phase 3 trial’, The Lancet (British edition),
 Details on the gem model can be found
 <a href="../models/pdac_gem.html">here</a>
 </p>
+</div>
 </div>
 
 
