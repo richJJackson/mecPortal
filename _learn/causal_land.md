@@ -4,7 +4,7 @@ title:  "Model Estimated Controls - A Causal Inference Tool"
 date: 2025-03-12
 categories: [methods]
 description: How do Model Estimated Controls work?
-image: assets/images/domino.jpg
+image:
 ---
 
 
@@ -16,7 +16,7 @@ Details on Model Estimated Controls as a tool for Causal Inference
 
 
 <!-- Two -->
-<section id="two" class="spotlights">
+<section id="two" class="flex-cards">
 
 	<section>
 		<a href="causal_psc.html" class="image">

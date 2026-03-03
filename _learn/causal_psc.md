@@ -4,18 +4,20 @@ title:  "How to use Model Estimated Controls"
 date: 2025-03-12
 categories: [methods]
 description: How do Model Estimated Controls work?
-image: assets/images/modelPlane.jpg
+image: assets/images/laptop-blackwhite.jpg
 ---
 
 
 
 
 
-<div class="box">
-  <section class="spotlights">
+
+  
+  <h2> Potential outcomes model estimated controls use to make causal inference statements </h2>
+  
+  <section class="causal-grid">
   
   
-  <h2> Potential outcomes MEC use to make CI statements </h2>
   
   <section>
     <div class="content">
@@ -53,7 +55,7 @@ image: assets/images/modelPlane.jpg
   
   
   </section>
-</div>
+
 
 
 
