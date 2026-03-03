@@ -14,7 +14,7 @@ image: assets/images/numbers.jpg
 
 
 <!-- Two -->
-<section id="two" class="spotlights">
+<section id="two" class="flex-cards">
 
   	<section>
 		<a href="howto_formatData.html" class="image">

@@ -4,7 +4,7 @@ title:  "Software for Model Estimated Controls"
 date: 2025-03-12
 categories: [methods]
 description: Get the tools you need to use Model Estimated Controls
-image: assets/images/technology.jpg
+image:
 ---
 
 
@@ -16,7 +16,7 @@ image: assets/images/technology.jpg
 
 
 <!-- Two -->
-<section id="two" class="spotlights">
+<section id="two" class="grid-cards">
 
 	<section>
 		<a href="software_package.html" class="image">

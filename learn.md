@@ -26,7 +26,7 @@ nav-menu: true
 </section>
 
 <!-- Two -->
-<section id="two" class="spotlights">
+<section id="two" class="grid-cards">
 
 	<section>
 		<a href="learn/manu_land.html" class="image">
