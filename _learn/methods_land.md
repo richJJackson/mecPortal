@@ -4,7 +4,7 @@ title:  "Model Estimated Controls - Methods"
 date: 2025-03-12
 categories: [methods]
 description: How do Model Estimated Controls work?
-image: assets/images/green-pencil.jpg
+image: 
 ---
 
 
@@ -18,11 +18,14 @@ image: assets/images/green-pencil.jpg
 
 
 <!-- Two -->
-<div class="box">
+<div class="collapsible-section">
   <section id="concept" class="spotlights">
   
+  <div class="section-header">
     <h2> Concept</h2> 
+  </div>
   
+  <div class="section-content">
   	<section>
   		<a class="image">
   			<img src="{% link assets/images/methods_land_fig1.png %}" alt="" data-position="center center" />
@@ -52,18 +55,22 @@ image: assets/images/green-pencil.jpg
   			</div>
   		</div>
   	</section>
-  	
+   </div>
   </section>
 </div>
 
 
 <!-- Two -->
 
-<div class="box">
+<div class="collapsible-section">
+
   <section id="Estimation" class="spotlights">
   
+  <div class="section-header">
     <h2> Estimation </h2> 
+  </div>
   
+  <div class="section-content">
     <p> Two procedures exist for estimating treatment effects using MEC - a simulation and a likelihood approach </p>
     
   	<section>
@@ -97,20 +104,21 @@ image: assets/images/green-pencil.jpg
   			</div>
   		</div>
   	</section>
-  	
+   </div>
   </section>
 </div>
 
 
 
 <!-- Two -->
-
-  
+<div class="collapsible-section">
+<div class="section-header">
 <h2> Further Details </h2> 
+</div>
 
-<div class="box">
 <!-- LINKS -->
-<section id="links">
+<div class="section-content">
+<section id="links" class="spotlights">
   <div class="inner">
       <header class="major">
   	    <h2>
@@ -139,6 +147,6 @@ image: assets/images/green-pencil.jpg
   </div>
     
 </section>
-
 </div>
+
 

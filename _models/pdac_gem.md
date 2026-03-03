@@ -8,6 +8,28 @@ description:  A model to describe overall survival in patients with PDAC
 
 
 
+<a id="top"></a>
+
+
+
+
+
+<!------------------------>
+<!------------------------>
+<!-- Contents -->
+<!------------------------>
+<!------------------------>
+<div class="section-nav">
+  <a href="#setting">Setting</a> |
+  <a href="#data">Data</a> |
+  <a href="#mod">Model</a> |
+  <a href="#valid">Validation</a> |
+  <a href="#use">Use Model</a> |
+  <a href="#ref">References</a>
+</div>
+
+
+
 
 <!------------------------>
 <!------------------------>
@@ -21,15 +43,17 @@ description:  A model to describe overall survival in patients with PDAC
     <ul class="actions">
       <li><a href="http://104.248.163.38/shiny/pdacShiny/" class="button special">Rshiny</a></li>
     </ul>
-  </div>
+</div>
 
 
 
-<div class="box">
+<div class="box collapsible-section">
 
-<h1 id="sett">Setting and Data</h1>
+<div class="section-header">
+<h2 id="setting">Setting</h2>
+</div>
 
-<h2>Setting </h2>
+<div class="section-content">
 <p>
 Data were taken from the European Study group for PAncreatic Cancer (ESPAC) 3 
 Study - A randomised phase III study to investigate the role of chemotherapy in 
@@ -39,8 +63,9 @@ centers in Europe, Australasia, Japan, and Canada
 </p>
 
 
-<div class="box" style="background-color: #796878 ;">
+
 <h2> Estimand </h2>
+
   <div class="row">
   	
   	<div class="7u 12u$(medium)">
@@ -83,10 +108,11 @@ centers in Europe, Australasia, Japan, and Canada
   		<p> The chosen estimand for analysis follows the Treatment Policy approach, ignoring 
       any intercurrent events or termination of therapies as is suitable for evaluating 
       patients at the point of treatment choice.   Lastly, as a key prognositc 
-      indicator, only patients with a basleine measure of post-operative CA19-9 were retained in the 
+      indicator, only patients with a baseline measure of post-operative CA19-9 were retained in the 
       model.</p>
 
   </div>
+</div>
 </div>
 
 
@@ -97,9 +123,13 @@ centers in Europe, Australasia, Japan, and Canada
 <!------------------------>
 <!------------------------>
 
-<div class="box" style="background-color: #856088;">
-<h2 id="data">Data</h2>
+<div class="box collapsible-section">
 
+<div class="section-header">
+<h2 id="data">Data</h2>
+</div>
+
+<div class="section-content">
 <p> Data considered for inclusion in the model were observed from the baseline
 case report forms of the ESPAC-3 study and included Resection
 Margin Status, Lymph Nodes, Local Invasion, WHO status, Tumor Grade (Differentiation), Tumour
@@ -182,7 +212,7 @@ Median Overall Survival (95% CI) was 22.8 (21.2 - 27.2) months.
      <!-- End Image -->
   </div>
 </div>
-
+</div>
 
 
 
@@ -194,10 +224,14 @@ Median Overall Survival (95% CI) was 22.8 (21.2 - 27.2) months.
 <!------------------------>
 
 
-<div class="box" style="background-color: #967bb6 ;">
-<h1 id="data"> Model </h1>
+<div class="box collapsible-section">
 
-<p> The model consturcuted was a flexible parametric survival model using a 
+<div class="section-header">
+<h2 id="mod"> Model </h2>
+</div>
+
+<div class="section-content">
+<p> The model constructed was a flexible parametric survival model using a 
 spline function to model the underlying cumulative hazard function.  Five 
 internal knots were chosen which gave sufficient flexibility. The number of 
 knots was chosen based on the best log-likelihood.
@@ -319,7 +353,7 @@ was constructed and single terms removed in an itterative fashion.  </p>
   
 </div>
 
-
+</div>
 </div>
 
 <!------------------------>
@@ -328,14 +362,16 @@ was constructed and single terms removed in an itterative fashion.  </p>
 <!------------------------>
 <!------------------------>
 
-<div class="box" style="background-color: #563c5c;">
+<div class="box collapsible-section">
 
-<h1 id="valid"> Validation </h1>
+<div class="section-header">
+<h2 id="valid"> Validation </h2>
+</div>
 
-
+<div class="section-content">
 <h3> Validation Details </h3>
 <h4> Internal Validation </h4>
-<div class="box">
+
 	<p> Internal validation is performed by assessing how well the model performs on the 
   training dataset. Validation are reported in terms of Calibration, Discrimination and Somers' D.  
 	Calibration is reported in terms of the Mallows C-Statistic and by regressing 
@@ -346,7 +382,7 @@ was constructed and single terms removed in an itterative fashion.  </p>
 	compared graphically and by evaluating the relative risk by fitting a 
 	univariable Cox Proportional Hazards Model.
 	</p>
-</div>
+
 
 
 <div class="row 200%">
@@ -519,17 +555,20 @@ quantiles used for internal validation.
   </div>
 
   </div>
-
+</div>
 
 
 
 <!------------------------>
 <!------------------------>
 
-<div class="box" style="background-color:#614051;">
+<div class="box collapsible-section">
 
-<h1 id="valid"> Use this model </h1>
+<div class="section-header">
+<h2 id="use"> Use this model </h2>
+</div>
 
+<div class="section-content">
 <div class="row">
 <div class="4u 12u$(medium)">
   <div class="box">
@@ -566,16 +605,20 @@ quantiles used for internal validation.
 
 </div>
 </div>
-
+</div>
 
 
 
 <!------------------------>
 <!------------------------>
 
- <div class="box" style="background-color:#8d4e85; ">
-<h1 id="valid"> References </h1>
+<div class="box collapsible-section">
 
+<div class="section-header">
+<h2 id="ref"> References </h2>
+</div>
+
+<div class="section-content">
 <p> 
 Details on the trial which provided the data for this model can be found at: <br>
 
@@ -585,4 +628,5 @@ Fluorouracil Plus Folinic Acid vs Gemcitabine Following Pancreatic Cancer
 Resection: A Randomized Controlled Trial. JAMA. 2010;304(10):1073–1081. 
 doi:10.1001/jama.2010.1275 <br> </a>
 </p>
+</div>
 </div>

@@ -6,7 +6,25 @@ area: HCC
 description:  A model to describe overall survival in patients with aHCC
 ---
 
+<a id="top"></a>
 
+
+
+
+
+<!------------------------>
+<!------------------------>
+<!-- Contents -->
+<!------------------------>
+<!------------------------>
+<div class="section-nav">
+  <a href="#setting">Setting</a> |
+  <a href="#data">Data</a> |
+  <a href="#mod">Model</a> |
+  <a href="#valid">Validation</a> |
+  <a href="#use">Use Model</a> |
+  <a href="#ref">References</a>
+</div>
 
 
 <!------------------------>
@@ -15,11 +33,14 @@ description:  A model to describe overall survival in patients with aHCC
 <!------------------------>
 <!------------------------>
 
-<div class="box">
+<div class="box collapsible-section">
 
-<h1 id="sett">Setting and Data</h1>
 
-<h2>Setting </h2>
+<div class="section-header">
+  <h2 id="setting">Setting </h2>
+</div>
+
+<div class="section-content">
 <p>
 Data were taken from the BRISK-FL study- a randomised phase III study to 
 compare the overall survival of brivanib versus sorafenib in patients
@@ -28,7 +49,7 @@ America, Australia and Africa.
 </p>
 
 <h2> Estimand </h2>
-<div class="box">
+
   <div class="row">
   
 	  <div class="6u 12u$(medium)">
@@ -63,9 +84,14 @@ America, Australia and Africa.
 		  </div>	
   </div>
 </div>
+
+<div class="row">
+<p>
+<a href="#top">Back to Top</a>
+</p>
 </div>
-
-
+</div>
+</div>
 
 <!------------------------>
 <!------------------------>
@@ -73,9 +99,13 @@ America, Australia and Africa.
 <!------------------------>
 <!------------------------>
 
+<div class="box collapsible-section">
 
+<div class="section-header">
 <h2 id="data">Data</h2>
+</div>
 
+<div class="section-content">
 <p> The dataset consisted of 454 patients of whom 204 (45%) observed an 
 event and 250 (55%) did not. The median overall survival (95% CI) was 
 16.2 (14.3, 17.6) months. </p>
@@ -162,8 +192,11 @@ event and 250 (55%) did not. The median overall survival (95% CI) was
   </div>
      <!-- End Image -->
   </div>
-
-
+<p>
+  <a href="#top">Back to Top</a>
+</p>
+</div>
+</div>
 
 
 
@@ -175,9 +208,13 @@ event and 250 (55%) did not. The median overall survival (95% CI) was
 <!------------------------>
 
 
-<div class="box">
-<h1 id="data"> Model </h1>
+<div class="box collapsible-section">
 
+<div class="section-header">
+  <h2 id="mod"> Model </h2>
+</div>
+
+<div class="section-content">
 <p> The model constructed was a flexible parametric survival model using
 a spline function to model the underlying cumulative hazard function. Four internal
 knots were chosen and were placed at the timepoints 3, 6 12, and 24 months. 
@@ -291,7 +328,7 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
   <tr>
    <td style="text-align:left;"> Alpha-fetoprotein </td>
    <td style="text-align:right;"> 0.07 (0.06) </td>
-   <td style="text-align:right;"> 1.08 ((0.959 - 1.209)) </td>
+   <td style="text-align:right;"> 1.08 (0.959 - 1.209) </td>
   </tr>
 </tbody>
 </table>
@@ -307,10 +344,9 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
   </div>
  
  </div>
-  
+<a href="#top">Back to Top</a>
 </div>
-
-
+</div>
 </div>
 
 <!------------------------>
@@ -319,15 +355,15 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
 <!------------------------>
 <!------------------------>
 
-<div class="box">
+<div class="box collapsible-section">
 
-<h1 id="valid"> Validation </h1>
+<div class="section-header">
+  <h2 id="valid"> Validation </h2>
+</div>
 
-<p> Details on the validation of the model: </p>
-
-
+<div class="section-content">
 <h3> Validation Details </h3>
-<div class="box">
+
 	<p> Validation are reported in term of Calibration, Discrimination and Somers' D.  
 	Calibration is reported in terms of the Mallows C-Statistic and by regressing 
 	the fitted linear predictor against the outcome (Slope). The linear predictor is 
@@ -339,7 +375,7 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
 	and the relative risk is evaluated by fitting a 
 	univariable Cox Proportional Hazards Model.
 	</p>
-</div>
+
 
 
 <div class="row 200%">
@@ -411,7 +447,7 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
   </div>
 
   </div>
-  
+    <h3>Risk Separation</h3>
   	<div class="6u 12u$(medium)">
   	  <!-- Image -->
 
@@ -423,18 +459,24 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
    </div>
 
   </div>
+<p>
+<a href="#top">Back to Top</a>
+</p>
 
 </div>
 
-
+</div>
 
 <!------------------------>
 <!------------------------>
 
-<div class="box">
+<div class="box collapsible-section">
 
-<h1 id="valid"> Use this model </h1>
+<div class="section-header">
+  <h2 id="use"> Use this model </h2>
+</div>
 
+<div class="section-content">
 <div class="row">
   <div class="5u 12u$(medium)">
     <div class="box">
@@ -447,20 +489,34 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
     </div>
   </div>
 </div>
-
+<div class="row">
+<p>
+<a href="#top">Back to Top</a>
+</p>
+</div>
+</div>
 </div>
 
 <!------------------------>
 <!------------------------>
 
- <div class="box">
-<h1 id="valid"> References </h1>
+<div class="box collapsible-section">
 
-Details on the trial which provided the data for this model can be found at:
+  <div class="section-header">
+    <h2 id="ref"> References </h2>
+  </div>
 
-Johnson, P.J. et al. (2013) ‘Brivanib Versus Sorafenib As First-Line 
-Therapy in Patients With Unresectable, Advanced Hepatocellular Carcinoma:
-Results From the Randomized Phase III BRISK-FL Study’, Journal of clinical 
-oncology, 31(28), pp. 3517–3524. 
-Available at: https://doi.org/10.1200/JCO.2012.48.4410.
+  <div class="section-content">
+    Details on the trial which provided the data for this model can be found at:
+    
+    Johnson, P.J. et al. (2013) ‘Brivanib Versus Sorafenib As First-Line 
+    Therapy in Patients With Unresectable, Advanced Hepatocellular Carcinoma:
+    Results From the Randomized Phase III BRISK-FL Study’, Journal of clinical 
+    oncology, 31(28), pp. 3517–3524. 
+    Available at: https://doi.org/10.1200/JCO.2012.48.4410.
+  </div>
 </div>
+
+<p>
+<a href="#top">Back to Top</a>
+</p>

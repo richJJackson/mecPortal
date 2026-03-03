@@ -6,14 +6,25 @@ area: HCC
 description: A model to describe progression free survival in patients with HCC
 ---
 
+<a id="top"></a>
+
+<div class="box">
+<h2> Contents </h2>
+<a href="#setting">Setting</a>
+<a href="#data">Data</a>
+<a href="#model">Model</a>
+<a href="#valid">Validation</a>
+<a href="#use">Use model</a>
+<a href="#ref">References</a>
+
+</div>
 
 
 <!-- Setting -->
 <div class="box">
 
-<h1 id="sett">Setting and Data</h1>
 
-<h2>Setting </h2>
+<h2 id="setting">Setting </h2>
 
 <p>
 Data were taken from the BRISK-FL study- a randomised phase III study to 
@@ -24,7 +35,7 @@ America, Australia and Africa.
 
 <h2> Estimand </h2>
 
-<div class="box">
+
 <div class="row">
 
 	<div class="6u 12u$(medium)">
@@ -61,7 +72,7 @@ America, Australia and Africa.
 	</div>	
 	</div>
 </div>
-</div>
+
 
 
 
@@ -71,7 +82,7 @@ America, Australia and Africa.
 
 
 <!-- Data -->
-
+<div class="box">
 <h2 id="data">Data</h2>
 
 <p> 
@@ -166,6 +177,8 @@ and 157 (33%) did not have an observed event.
   </div>
 
 
+</div>
+<a href="#top">Back to Top</a>
 </div>
 <!------>
 <!------>
@@ -296,7 +309,7 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
   
 </div>
 
-
+<a href="#top">Back to Top</a>
 </div>
  <!------>
  <!------>
@@ -408,6 +421,7 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
 
   </div>
 
+<a href="#top">Back to Top</a>
 </div>
 
 <!------>
@@ -416,18 +430,32 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
 
 <div class="box">
 
-<h1 id="valid"> Use this model </h1>
+<h1 id="use"> Use this model </h1>
 
-
-Download this model and learn how to use it by visiting 
-github/richJJackson/pscLibrary/test_model
+<div class="row">
+  <div class="5u 12u$(medium)">
+    <div class="box">
+    <p>
+      Download this model and learn how to use it by visiting
+        <ul class="actions">
+          <li><a href= "github/richJJackson/pscLibrary/test_model" class="button special">Download</a> </li>
+        </ul>
+    </p>
+    </div>
+  </div>
+</div>
+<div class="row">
+<p>
+<a href="#top">Back to Top</a>
+</p>
+</div>
 
 </div>
 <!------>
 <!------>
 
  <div class="box">
-<h1 id="valid"> References </h1>
+<h1 id="ref"> References </h1>
 
 Details on the trial which provided the data for this model can be found at:
 
