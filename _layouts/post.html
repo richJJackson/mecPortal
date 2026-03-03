@@ -34,3 +34,31 @@
 </body>
 
 </html>
+
+
+<script>
+
+// Collapsible sections
+document.querySelectorAll(".collapsible-section").forEach(function(section){
+
+  const header = section.querySelector(".section-header");
+  const content = section.querySelector(".section-content");
+
+  // Set initial max height
+  content.style.maxHeight = content.scrollHeight + "px";
+
+  header.addEventListener("click", function(){
+
+    if(content.classList.contains("collapsed")){
+      content.classList.remove("collapsed");
+      content.style.maxHeight = content.scrollHeight + "px";
+    } else {
+      content.classList.add("collapsed");
+      content.style.maxHeight = "0";
+    }
+
+  });
+
+});
+
+</script>
