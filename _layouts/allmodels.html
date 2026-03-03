@@ -33,11 +33,14 @@
       
       {% assign model_areas = site.models | group_by: "area" %}
 
-      {% for group in model_areas %}      
+      {% for group in model_areas %} 
+
+      <header class="major">
+        <h2>{{ group.name }}</h2>
+      </header>
+	  
       <section id="modTiles" class="spotlights">
-          <header class="major">
-            <h2>{{ group.name }}</h2>
-          </header>
+
         
         
           {% for model in group.items %}
