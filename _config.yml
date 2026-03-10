@@ -1,8 +1,8 @@
 # site settings
 title: mecPortal
-subtitle: A portal for model estimated controls
+subtitle: A portal for Personalised Synthetic Controls
 email: richj23@liverpool.ac.uk
-description: A portal to learn and use Model Estimated Controls
+description: Providing accessible tools, documentation and applications for Personalised Synthetic Controls in healthcare research
 baseurl: /mecPortal # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author: Richard Jackson
