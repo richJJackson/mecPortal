@@ -1,7 +1,8 @@
 ---
 layout: allmodels
-title: Models
-description: Discover models which can be used for your research!
+order: 4
+title: Repository
+description: Developed models ready for use as PSCs
 image: assets/images/turing.jpg
 nav-menu: true
 ---

@@ -1,7 +1,8 @@
 ---
-title: Learn More!
+title: Getting started
+order: 2
 layout: landing
-description: Learn how Model Estimated Controls work and find out how you can use them!
+description: When and how should PSCs be used?
 image: assets/images/blackboard.jpg
 nav-menu: true
 ---

@@ -1,7 +1,8 @@
 ---
 layout: allapp
-title: Applications
-description: List of Applied Problems
+order: 3
+title: Real-World Examples
+description: How PSCs have been used in healthcare research
 image: assets/images/enigma.jpg
 nav-menu: true
 ---
