@@ -543,63 +543,6 @@ body #main.alt {
 }
 
 
-/* change the spotlights on the learn.md page! */
-.grid-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-	margin-top: 3rem;
-}
-
-@media screen and (max-width: 900px) {
-    .grid-cards {
-        grid-template-columns: 1fr;
-    }
-}
-
-.grid-cards > section {
-    background: #ffffff;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
-    border: 1px solid rgba(0,0,0,0.04);
-    transition: all 0.35s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.grid-cards > section:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
-}
-
-.grid-cards .image img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-}
-
-
-/* make different type of cards */
-
-.flex-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.flex-cards > section {
-    flex: 1 1 45%; /* two cards per row, shrink/grow */
-    min-width: 280px;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 /* =========================================
    causal Grid – Modern Equal Height Cards
