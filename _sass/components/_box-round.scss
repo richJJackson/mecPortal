@@ -1,0 +1,23 @@
+///
+/// Forty by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Box */
+	
+	.box-round {
+		border: solid 1px _palette(border);
+		padding: 40px;
+		margin-bottom: 60px;
+		border-radius: 14px;
+		background: #ffffff;
+		box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+
+	
+		> :last-child,
+		> :last-child > :last-child,
+		> :last-child > :last-child > :last-child {
+		    margin-bottom: 0;
+		  }
+		}
