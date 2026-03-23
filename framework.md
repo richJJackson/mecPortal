@@ -114,6 +114,75 @@ nav-menu: true
   	
     </p>
   </div>
-
+   
 </section>
+
+
+<div class="inner">
+
+
+
+  <div id="two" class="grid-cards">
+		<a href="framework/concept_estimation.html" class="image">
+			<img src="{% link assets/images/paper.jpg %}" alt="" data-position="center center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3> Concept and Estimation </h3>
+				</header>
+				<p>Learn more about the concept behind model estimated controls, including
+				likelihood definitions and Bayesian Estimation procedures</p>
+				<ul class="actions">
+					<li><a href="framework/concept_estimation.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="two" class="grid-cards">
+		<a href="framework/concept_estimation.html" class="image">
+			<img src="{% link assets/images/math_board.jpg %}" alt="" data-position="center center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3> Mathematical Framework </h3>
+				</header>
+				<p>Learn more about the mathematical framework of PSCs </p>
+				<ul class="actions">
+					<li><a href="framework/mathematical_fwk.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+		<div id="two" class="grid-cards">
+		<a href="framework/concept_estimation.html" class="image">
+			<img src="{% link assets/images/paper.jpg %}" alt="" data-position="center center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3> Manuscript and publications </h3>
+				</header>
+				<p>Access the published manuscript about Personalised Synthetic Controls </p>
+				<ul class="actions">
+					<li><a href="https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-025-02540-2" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	
 </div>
+
+</div>
+
+
+
+
+	

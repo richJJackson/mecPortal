@@ -14,37 +14,60 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h1>What are Model Estimated Controls?</h1>
+			<h1>When Should PSCs be used?</h1>
 		</header>
-		<p> Model estimated controls (MECs) are statistical models that can be used 
-		to assess the efficacy of new therapies without needing to use clinical trials.
-    </p>
-    <p>
-    MECs can act as counterfactual evidence (a way to predict ‘what if?’)- 
-    i.e., how would patients respond if they had received a different treatment?
-    </p>
+		
+		<div class="box-round">
+		  <header class="minor">
+		  <h2> Estimating Treatment Effects </h2>
+		  </header>
+		  
+		  
+		    
+		    <div class="box-round">
+		      <h3> RCT </h3>
+		      <p>
+	          PSCs can be used to essentially produce the same information
+	          that a RCT produces (to estimate treatment efficacy). 
+	          The downside of RCTs is that they are costly, time consuming and 
+	          require large numbers of patients. 
+	          
+	          <br>
+	          When only data from an experimental arm are available, PSCs
+	          can act as a control group to be compared against the performance of the 
+	          experimental group. This allows for the comparison of the two treatment 
+	          groups (as is done in a RCT).
+	          
+	          <div>
+    
+              <span class="image fit"><img src="{% link assets/images/illustration-psc-comp.png %}" alt="" /></span>
+            </div>
+		      </p>
+		    </div>
+		    
+		    
+		    <div class="box-round">
+		      <h3> Observational Data </h3>
+		      The PSC methodology is also useful for estimating treatment effects 
+		      using observational data on experimental treatments
+		    </div>
+		    
+		  </div>
+		  
+		  
+		  <header class="minor">
+		  <h2> Designing Trials Using Personalised Synthetic Controls </h2>
+		  </header>
+		  
+		</div>
+		
 	</div>
 </section>
 
 <!-- Two -->
 <section id="two" class="grid-cards">
 
-	<section>
-		<a href="learn/manu_land.html" class="image">
-			<img src="{% link assets/images/paper.jpg %}" alt="" data-position="center center" />
-		</a>
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3> Manuscript </h3>
-				</header>
-				<p>Access the published manuscript about Personalised Synthetic Controls </p>
-				<ul class="actions">
-					<li><a href="https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-025-02540-2" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
+
 
 	<section>
 		<a href="learn/methods_land.html" class="image">
