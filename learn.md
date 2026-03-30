@@ -25,7 +25,7 @@ nav-menu: true
 		  
 		    
 		    <div class="box-round">
-		      <h3> RCT </h3>
+		      <h3> Randomised Controlled Trials (RCTs) </h3>
 		      <p>
 	          PSCs can be used to essentially produce the same information
 	          that a RCT produces (to estimate treatment efficacy). 
@@ -55,14 +55,33 @@ nav-menu: true
 		  </div>
 		  
 		  
+		  <div class="box-round">
 		  <header class="minor">
-		  <h2> Designing Trials Using Personalised Synthetic Controls </h2>
+		  <h2> Designing Clinical Trials Using Personalised Synthetic Controls </h2>
 		  </header>
+		  
+		  
+		  <div class="box-round">
+		  In the design of a single-arm clinical trial, the PSC model can act as 
+		  the external control arm:
+		  
+		  
+		    <div>
+          <span class="image fit"><img src="{% link assets/images/exp_trial.jpg %}" alt="" /></span>
+        </div>
+		  
+		  This supports efficiency because fewer randomised control patients
+		  can be used while still achieving a structured comparison that accounts for 
+		  uncertainty in the PSC. This allows for choosing an experimental 
+		  sample size that achieves an efficient clinical trial.
+
+		  </div>
 		  
 		</div>
 		
-	</div>
+	
 </section>
+</div>
 
 <!-- Two -->
 <section id="two" class="grid-cards">
