@@ -49,7 +49,21 @@ nav-menu: true
 		    <div class="box-round">
 		      <h3> Observational Data </h3>
 		      The PSC methodology is also useful for estimating treatment effects 
-		      using observational data on experimental treatments
+		      using observational data for patients that received experimental treatments 
+		      (e.g., no/little control group or registry data where clinicians chose who to treat).
+		      
+		      In this situation, the observational cohort can act as the
+		      experimental arm and the PSC can be used to generate the counterfactual outcome
+		      for each patient under the control (what would happen if they had received the 
+		      current standard of care).
+		      
+		      A comparison can be made between the observed and predicted outcomes to estimate 
+		      a treatment effect.
+		      
+		      <div>
+              <span class="image fit"><img src="{% link assets/images/observ-diag.jpg %}" alt="" /></span>
+          </div>
+		      
 		    </div>
 		    
 		  </div>
@@ -79,12 +93,62 @@ nav-menu: true
 		  
 		</div>
 		
-	
+	</div>
 </section>
-</div>
+
+
+
+
 
 <!-- Two -->
-<section id="two" class="grid-cards">
+
+<!-- Two -->
+<section id="two">
+
+  <div class="inner grid-cards"> 
+  	<a href="learn/howto_land.html" class="image">
+			<img src="{% link assets/images/maze.jpg %}" alt="" data-position="25% 25%" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3> How To... </h3>
+				</header>
+				<p> Details and user guides on how to use Synthetic Controls in practice </p>
+				<ul class="actions">
+					<li><a href="learn/howto_land.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+  
+  
+ 
+    <a href="learn/software_land.html" class="image">
+			<img src="{% link assets/images/code.jpg %}" alt="" data-position="top center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3> Software </h3>
+				</header>
+				<p> Explore the packages developed to use Personalised Synthetic Controls and learn how they are used</p>
+				<ul class="actions">
+					<li><a href="learn/software_land.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+
+		
+		
+  </div>
+  
+</section>
+
+
+
+<section id="three" class="grid-cards">
 
 
 
