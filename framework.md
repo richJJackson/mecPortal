@@ -92,7 +92,7 @@ nav-menu: true
     <li> There are no unmeasured confounders (i.e., there are no 
     unaccounted variables that affect the outcome). </li>
     
-    <li> Stable Unit Treatment Variability Assumption - a patients's potential outcome is not affected by 
+    <li> Stable Unit Treatment Variability Assumption - a patient's potential outcome is not affected by 
     the setting in which it was observed</li>
     
     <li> The model is correctly specified and the posterior distribution
