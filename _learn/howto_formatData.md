@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How To Format Data for Analysis"
+title:  "How To Format Data for Analysis for treatment comparison with Personalised Synthetic Controls"
 date: 2025-03-12
 categories: [methods]
 description: How do Model Estimated Controls work?
@@ -15,7 +15,6 @@ description: How do Model Estimated Controls work?
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">How To Format Your Data for Analysis for treatment comparison with Model Estimated Controls</h1>
 </div>
 
 
