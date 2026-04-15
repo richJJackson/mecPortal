@@ -107,7 +107,7 @@ nav-menu: true
 
   <div class="inner grid-cards"> 
   	<a href="learn/howto_land.html" class="image">
-			<img src="{% link assets/images/maze.jpg %}" alt="" data-position="25% 25%" />
+			<img src="{% link assets/images/how-to.jpg %}" alt="" data-position="25% 25%" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -124,7 +124,7 @@ nav-menu: true
   
  
     <a href="learn/software_land.html" class="image">
-			<img src="{% link assets/images/code.jpg %}" alt="" data-position="top center" />
+			<img src="{% link assets/images/software.jpg %}" alt="" data-position="top center" />
 		</a>
 		<div class="content">
 			<div class="inner">

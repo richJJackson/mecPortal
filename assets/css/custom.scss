@@ -110,6 +110,23 @@
     opacity: 0.15;             /* lighter on hover */
 }
 
+body.page-home .tiles article header.major h3,
+.tiles article header.major p {
+  text-shadow: 0 2px 14px rgba(0,0,0,0.75);
+}
+
+body.page-home .tiles article header.major p {
+  color: rgba(255,255,255,0.92);
+}
+
+body.page-home .tiles article:after {
+	background-color: rgba(0, 0, 0, 0.35) !important;
+}
+
+body.page-home .tiles article header.major h3 a.link {
+  color: #ffffff !important; 
+}
+
 /* ----- Section Spacing ----- */
 section {
     padding: 5em 0;           /* balanced vertical spacing */
