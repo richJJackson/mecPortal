@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+    Forty by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  -->
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %} 
+    
+    <!-- Main -->
+    <div id="main" class="alt">
+      
+     <!-- Banner -->
+    <section id="banner" class="minor">
+        <div class="inner">
+            <header class="minor">
+                <h1>Resources</h1>
+            </header>
+            <div class="content">
+                <p style="text-transform: uppercase;"> Documents and guides for Personalised Synthetic Controls </p>
+            </div>
+        </div>
+    </section>
+
+    
+
+      <!-- One -->
+      <div id="tiles" class="alt">
+      <section id="allres" class="tiles">
+          {% assign resources_sorted = site.resources | sort: "order" %}
+          {% for res in resources_sorted %}
+	        {% if res.title != 404 %}
+	        <article>
+	          
+        	  <header class="major">
+        	    <h4>
+        	      <a href="{{ site.baseurl }}/{{ res.url }}">
+                {{ res.title }}
+                </a>
+        	    </h4>
+				<p> {{res.description}} </p>
+				<span class="image fit"><img src="{{res.image}}" alt="" /></span>
+        	  </header>
+        	  
+          </article>
+      	  {% endif %}
+          {% endfor %}
+      </section>
+    </div>
+
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
