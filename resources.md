@@ -1,5 +1,5 @@
 ---
-layout: allapp
+layout: resources
 order: 5
 title: Resources
 description: Documents and guides for PSCs
