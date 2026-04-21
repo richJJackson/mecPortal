@@ -41,8 +41,36 @@ description:  A model to describe overall survival in patients with PDAC
 
 <div>
     <ul class="actions">
-      <li><a href="http://104.248.163.38/shiny/pdacShiny/" class="button special">Rshiny</a></li>
+      <li><a href="http://104.248.163.38/shiny/pdacShiny/" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="button special">Rshiny</a></li>
     </ul>
+</div>
+
+
+
+<div class="box collapsible-section">
+
+<div class="section-header">
+<h2 id="setting">Executive Summary</h2>
+</div>
+
+<div class="section-content">
+<p>
+<ul><li> 2 sentences & 3 bullet points describing what was found </li></ul>
+<ul><li> 
+A counterfactual model was developed, that can be used to predict the survival of patients
+when treated with Gemcitabine plus Capecitabine (GemCap) and compare this prediction
+with the actual observed survival of patients treated with Gemcitabine alone to derive treatment efficacy.
+
+<ul style="list-style-type:circle;">
+  <li>The covariates included in the final model were: lymph node status, resection margin status and differentiation status</li>
+  <li>Validation of the CFM showed that the model can discriminate between risk groups</li>
+  <li></li>
+</ul>
+
+</li></ul>
+</p>
+</div>
+
 </div>
 
 
@@ -57,7 +85,7 @@ description:  A model to describe overall survival in patients with PDAC
 <p>
 Data were taken from the European Study group for PAncreatic Cancer (ESPAC) 3 
 Study - A randomised phase III study to investigate the role of chemotherapy in 
-patients following surgery for Pancreatic Ductal Adenocarcinoma.  Patients were
+patients following surgery for Pancreatic Ductal Adenocarcinoma. Patients were
 randomised post surgery.  Patients were recruited from 159 pancreatic cancer 
 centers in Europe, Australasia, Japan, and Canada
 </p>
@@ -575,7 +603,7 @@ quantiles used for internal validation.
     <p> 
     This model is available to download 
     <ul class="actions">
-      <li><a href="https://github.com/richJJackson/pscRepository/tree/main/Models/PDAC/Gem_model" class="button special">Download</a></li>
+      <li><a href="https://github.com/richJJackson/pscRepository/tree/main/Models/PDAC/Gem_model" target="_blank" rel="noopener noreferrer" class="button special">Download</a></li>
     </ul>
     </p>
   </div>
@@ -586,7 +614,7 @@ quantiles used for internal validation.
     <p>
     Find out more about how models are stored/shared and how you can use them 
     <ul class="actions">
-      <li><a href="https://github.com/richJJackson/pscRepository/tree/main/Models" class="button special">Models</a></li>
+      <li><a href="https://github.com/richJJackson/pscRepository/tree/main/Models" target="_blank" rel="noopener noreferrer" class="button special">Models</a></li>
     </ul>
     </p>
   </div>
@@ -597,7 +625,18 @@ quantiles used for internal validation.
     <p>
     This model has been used to compare the combined therapy GemCap against Gem. 
     <ul class="actions">
-      <li><a href="https://github.com/richJJackson/pscRepository/blob/main/Applications/Gem_vs_GemCap/gem_vs_gemcap.R" class="button special">Find out how</a></li>
+      <li><a href="https://github.com/richJJackson/pscRepository/blob/main/Applications/Gem_vs_GemCap/gem_vs_gemcap.R" target="_blank" rel="noopener noreferrer" class="button special">Find out how</a></li>
+    </ul>
+    </p>
+  </div>
+</div>
+
+<div class="5u 12u$(medium)">
+  <div class="box">
+    <p> 
+    How to 
+    <ul class="actions">
+      <li><a href="../learn/how_to_import.html" class="button special">How to import models in R</a></li>
     </ul>
     </p>
   </div>
@@ -623,7 +662,7 @@ quantiles used for internal validation.
 Details on the trial which provided the data for this model can be found at: <br>
 
 
-<a href = "https://jamanetwork.com/journals/jama/fullarticle/186548" > Neoptolemos JP, Stocken DD, Bassi C, et al. Adjuvant Chemotherapy With 
+<a href = "https://jamanetwork.com/journals/jama/fullarticle/186548"  target="_blank" rel="noopener noreferrer"> Neoptolemos JP, Stocken DD, Bassi C, et al. Adjuvant Chemotherapy With 
 Fluorouracil Plus Folinic Acid vs Gemcitabine Following Pancreatic Cancer 
 Resection: A Randomized Controlled Trial. JAMA. 2010;304(10):1073–1081. 
 doi:10.1001/jama.2010.1275 <br> </a>

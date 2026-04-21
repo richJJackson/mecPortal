@@ -2,7 +2,7 @@
 layout: allmodels
 order: 4
 title: Repository
-description: Developed models ready for use as PSCs
+description: Developed models ready for future use as PSCs
 image: assets/images/turing.jpg
 nav-menu: true
 ---
