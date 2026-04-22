@@ -21,14 +21,13 @@ description:  How to download and import this model in R
   Click on the disease interest of your choice (e.g., PDAC)
   </p>
   
-  <p>
   <div class="video-centre">
     <video controls preload="metadata">
       <source src="{{ '/assets/videos/download_models_ff.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
-  </p>
+  
   
   
   </section>
@@ -43,14 +42,17 @@ description:  How to download and import this model in R
   <p>
   Now that we have downloaded the model we want from the github repository, our next task
   is to save the model in our desired working directory...
+  Once it is in the desired folder location, we can import the model in
+  our R project.
+  </p>
   <div class="video-centre">
-  <video controls preload="metadata">
+  <video controls preload="metadata" onended="this.pause(); this.currentTime = 0; this.load();">
       <source src="{{ '/assets/videos/import_pdac_ff.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
 
     </video>
   </div>
-  </p>
+  
   
   </section>
 </div>
