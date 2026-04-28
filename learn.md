@@ -169,39 +169,9 @@ nav-menu: true
 		</div>
 	</section>
 	
-	<section>
-		<a href="learn/software_land.html" class="image">
-			<img src="{% link assets/images/code.jpg %}" alt="" data-position="top center" />
-		</a>
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3> Software </h3>
-				</header>
-				<p> Explore the packages developed to use Personalised Synthetic Controls and learn how they are used</p>
-				<ul class="actions">
-					<li><a href="learn/software_land.html" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
 	
-	<section>
-		<a href="learn/howto_land.html" class="image">
-			<img src="{% link assets/images/maze.jpg %}" alt="" data-position="25% 25%" />
-		</a>
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3> How To... </h3>
-				</header>
-				<p> Details and user guides on how to use Synthetic Controls in practice </p>
-				<ul class="actions">
-					<li><a href="learn/howto_land.html" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
+	
+	
 
 	<section>
 		<a href="learn/causal_land.html" class="image">
