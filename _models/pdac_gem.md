@@ -20,12 +20,53 @@ description:  A model to describe overall survival in patients with PDAC
 <!------------------------>
 <!------------------------>
 <div class="section-nav">
-  <a href="#setting">Setting</a> |
+  <a href="#exec-summ">Summary</a> |
+  <a href="#setting">Background</a> |
   <a href="#data">Data</a> |
   <a href="#mod">Model</a> |
   <a href="#valid">Validation</a> |
   <a href="#use">Use Model</a> |
   <a href="#ref">References</a>
+</div>
+
+
+<div>
+    <ul class="actions">
+      <li><a href="http://104.248.163.38/shiny/pdacShiny/" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="button glass">Rshiny</a></li>
+    </ul>
+</div>
+
+
+<!------------------------>
+<!------------------------>
+<!-- Summary -->
+<!------------------------>
+<!------------------------>
+
+<div class="box collapsible-section">
+
+<div class="section-header">
+<h2 id="exec-summ">Executive Summary</h2>
+</div>
+
+<div class="section-content">
+<p>
+<ul><li> 2 sentences & 3 bullet points describing what was found </li></ul>
+<ul><li> 
+A counterfactual model was developed, that can predict the survival of patients
+when treated with Gemcitabine plus Capecitabine (GemCap).
+This prediction was compared with the actual observed survival of patients treated with Gemcitabine alone to derive treatment efficacy.
+
+<ul style="list-style-type:circle;">
+  <li>The covariates included in the final model were: lymph node status, resection margin status and differentiation status</li>
+  <li>Validation of the CFM showed that the model can clearly discriminate between risk groups</li>
+  <li></li>
+</ul>
+
+</li></ul>
+</p>
+</div>
+<a href="#top">Back to Top</a>
 </div>
 
 
@@ -39,46 +80,11 @@ description:  A model to describe overall survival in patients with PDAC
 
 
 
-<div>
-    <ul class="actions">
-      <li><a href="http://104.248.163.38/shiny/pdacShiny/" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="button special">Rshiny</a></li>
-    </ul>
-</div>
-
-
 
 <div class="box collapsible-section">
 
 <div class="section-header">
-<h2 id="setting">Executive Summary</h2>
-</div>
-
-<div class="section-content">
-<p>
-<ul><li> 2 sentences & 3 bullet points describing what was found </li></ul>
-<ul><li> 
-A counterfactual model was developed, that can be used to predict the survival of patients
-when treated with Gemcitabine plus Capecitabine (GemCap) and compare this prediction
-with the actual observed survival of patients treated with Gemcitabine alone to derive treatment efficacy.
-
-<ul style="list-style-type:circle;">
-  <li>The covariates included in the final model were: lymph node status, resection margin status and differentiation status</li>
-  <li>Validation of the CFM showed that the model can discriminate between risk groups</li>
-  <li></li>
-</ul>
-
-</li></ul>
-</p>
-</div>
-
-</div>
-
-
-
-<div class="box collapsible-section">
-
-<div class="section-header">
-<h2 id="setting">Setting</h2>
+<h2 id="setting">Background</h2>
 </div>
 
 <div class="section-content">
@@ -141,6 +147,7 @@ centers in Europe, Australasia, Japan, and Canada
 
   </div>
 </div>
+<a href="#top">Back to Top</a>
 </div>
 
 
@@ -240,6 +247,8 @@ Median Overall Survival (95% CI) was 22.8 (21.2 - 27.2) months.
      <!-- End Image -->
   </div>
 </div>
+
+<a href="#top">Back to Top</a>
 </div>
 
 
@@ -373,7 +382,7 @@ was constructed and single terms removed in an itterative fashion.  </p>
     <h3> Model Prediction</h3>
     See how this model can be used to predict survival!
     <ul class="actions">
-      <li><a href="http://104.248.163.38/shiny/pdacShiny/" class="button special">Rshiny</a></li>
+      <li><a href="http://104.248.163.38/shiny/pdacShiny/" class="button">Rshiny</a></li>
     </ul>
   </div>
  
@@ -382,6 +391,7 @@ was constructed and single terms removed in an itterative fashion.  </p>
 </div>
 
 </div>
+<a href="#top">Back to Top</a>
 </div>
 
 <!------------------------>
@@ -583,6 +593,7 @@ quantiles used for internal validation.
   </div>
 
   </div>
+<a href="#top">Back to Top</a>
 </div>
 
 
@@ -598,21 +609,13 @@ quantiles used for internal validation.
 
 <div class="section-content">
 <div class="row">
-<div class="4u 12u$(medium)">
-  <div class="box">
-    <p> 
-    This model is available to download 
-    <ul class="actions">
-      <li><a href="https://github.com/richJJackson/pscRepository/tree/main/Models/PDAC/Gem_model" target="_blank" rel="noopener noreferrer" class="button special">Download</a></li>
-    </ul>
-    </p>
-  </div>
-</div>
 
-<div class="4u 12u$(medium)">
+
+
+<div class="3u 12u$(medium)">
   <div class="box">
     <p>
-    Find out more about how models are stored/shared and how you can use them 
+    This model is available to download 
     <ul class="actions">
       <li><a href="https://github.com/richJJackson/pscRepository/tree/main/Models" target="_blank" rel="noopener noreferrer" class="button special">Models</a></li>
     </ul>
@@ -625,7 +628,7 @@ quantiles used for internal validation.
     <p>
     This model has been used to compare the combined therapy GemCap against Gem. 
     <ul class="actions">
-      <li><a href="https://github.com/richJJackson/pscRepository/blob/main/Applications/Gem_vs_GemCap/gem_vs_gemcap.R" target="_blank" rel="noopener noreferrer" class="button special">Find out how</a></li>
+      <li><a href="https://github.com/richJJackson/pscRepository/blob/main/Applications/Gem_vs_GemCap/gem_vs_gemcap.R" target="_blank" rel="noopener noreferrer" class="button glass special">Find out how</a></li>
     </ul>
     </p>
   </div>
@@ -634,9 +637,9 @@ quantiles used for internal validation.
 <div class="5u 12u$(medium)">
   <div class="box">
     <p> 
-    How to 
+     Find out more about how models are stored/shared and how you can use them 
     <ul class="actions">
-      <li><a href="../learn/how_to_import.html" class="button special">How to import models in R</a></li>
+      <li><a href="../learn/how_to_import.html" class="button special"> Import models in R</a></li>
     </ul>
     </p>
   </div>
@@ -644,6 +647,7 @@ quantiles used for internal validation.
 
 </div>
 </div>
+<a href="#top">Back to Top</a>
 </div>
 
 
@@ -668,4 +672,5 @@ Resection: A Randomized Controlled Trial. JAMA. 2010;304(10):1073–1081.
 doi:10.1001/jama.2010.1275 <br> </a>
 </p>
 </div>
+<a href="#top">Back to Top</a>
 </div>

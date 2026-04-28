@@ -3,7 +3,7 @@ title: The PSC framework
 order: 1
 layout: landing
 description: What are Personalised Synthetic Controls and how do they work?
-image: assets/images/blackboard.jpg
+image: assets/images/mathematical.jpg
 nav-menu: true
 ---
 
@@ -111,7 +111,9 @@ nav-menu: true
   		<h1> When should PSCs be used? </h1>
   	</header>
   	<p> 
-  	
+  	PSCs should be used to investigate and assess the efficacy of treatments in comparison to the standard of care.
+  	PSCs should also be used to design clinical trials to improve their efficacy. <br>
+  	<a href="learn.html" class="button special"> Read more about when PSCs should be used </a>
     </p>
   </div>
    

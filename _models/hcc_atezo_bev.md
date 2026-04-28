@@ -18,13 +18,40 @@ description:  A model to describe overall survival in patients with aHCC
 <!------------------------>
 <!------------------------>
 <div class="section-nav">
-  <a href="#setting">Setting</a> |
+  <a href="#exec-summ">Summary</a> |
+  <a href="#setting">Background</a> |
   <a href="#data">Data</a> |
   <a href="#mod">Model</a> |
   <a href="#valid">Validation</a> |
   <a href="#use">Use Model</a> |
   <a href="#ref">References</a>
 </div>
+
+
+<!------------------------>
+<!------------------------>
+<!-- Summary -->
+<!------------------------>
+<!------------------------>
+
+<div class="box collapsible-section">
+
+<div class="section-header">
+<h2 id="exec-summ">Executive Summary</h2>
+</div>
+
+
+<div class="section-content">
+<p>
+<ul><li> 2 sentences & 3 bullet points describing what was found </li></ul>
+</p>
+</div>
+
+
+
+<a href="#top">Back to Top</a>
+</div>
+
 
 
 <!------------------------>
@@ -37,7 +64,7 @@ description:  A model to describe overall survival in patients with aHCC
 
 
 <div class="section-header">
-  <h2 id="setting">Setting </h2>
+  <h2 id="setting">Background </h2>
 </div>
 
 <div class="section-content">
@@ -478,12 +505,12 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
 
 <div class="section-content">
 <div class="row">
-  <div class="5u 12u$(medium)">
+  <div class="4u 12u$(medium)">
     <div class="box">
     <p>
       Download this model and learn how to use it by visiting
         <ul class="actions">
-          <li><a href= "github/richJJackson/pscLibrary/test_model" class="button special">Download</a> </li>
+          <li><a href= "https://github.com/richJJackson/pscRepository/tree/main/Models/HCC/AtezoBev" class="button special">Download</a> </li>
         </ul>
     </p>
     </div>

@@ -3,7 +3,7 @@ layout: allapp
 order: 3
 title: Real-World Examples
 description: How PSCs have been used in healthcare research
-image: assets/images/enigma.jpg
+image: assets/images/rw-examples.jpg
 nav-menu: true
 ---
 

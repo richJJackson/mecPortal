@@ -3,7 +3,7 @@ title: Getting started
 order: 2
 layout: landing
 description: When and how should PSCs be used?
-image: assets/images/blackboard.jpg
+image: assets/images/learn-img.jpg
 nav-menu: true
 ---
 

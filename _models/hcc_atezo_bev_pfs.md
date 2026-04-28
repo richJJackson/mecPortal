@@ -8,16 +8,45 @@ description: A model to describe progression free survival in patients with HCC
 
 <a id="top"></a>
 
-<div class="box">
-<h2> Contents </h2>
-<a href="#setting">Setting</a>
-<a href="#data">Data</a>
-<a href="#model">Model</a>
-<a href="#valid">Validation</a>
-<a href="#use">Use model</a>
-<a href="#ref">References</a>
-
+<div class="section-nav">
+  <a href="#exec-summ">Executive Summary</a> |
+  <a href="#setting">Setting</a> |
+  <a href="#data">Data</a> |
+  <a href="#mod">Model</a> |
+  <a href="#valid">Validation</a> |
+  <a href="#use">Use Model</a> |
+  <a href="#ref">References</a>
 </div>
+
+
+
+
+
+
+<!------------------------>
+<!------------------------>
+<!-- Summary -->
+<!------------------------>
+<!------------------------>
+
+<div class="box collapsible-section">
+
+<div class="section-header">
+<h2 id="exec-summ">Executive Summary</h2>
+</div>
+
+
+<div class="section-content">
+<p>
+<ul><li> 2 sentences & 3 bullet points describing what was found </li></ul>
+</p>
+</div>
+
+
+
+<a href="#top">Back to Top</a>
+</div>
+
 
 
 <!-- Setting -->

@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "How to use Model Estimated Controls"
+title:  "How to use Personalised Synthetic Controls"
 date: 2025-03-12
 categories: [methods]
-description: How do Model Estimated Controls work?
+description: How do Personalised Synthetic Controls work?
 ---
 
 
@@ -32,7 +32,7 @@ description: How do Model Estimated Controls work?
 
 </header>
 
-<div class="box" style = "background-color:#86608e;">
+<div class="box-round">
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>For survival outcomes, MECs can be used as a control to compare the effect of a control treatment against the effect of an observed experimental treatment on overall survival in patients.</p>
@@ -46,7 +46,7 @@ description: How do Model Estimated Controls work?
 </section>
 </div>
 
-<div class="box" style="background-color:#8a496b;">
+<div class="box-round">
 <section id="an-example" class="level2">
 <h2 class="anchored" data-anchor-id="an-example">An example</h2>
 <p>In this example, we will look at survival outcomes in patients with pancreatic cancer from the ESPAC (European Study for Pancreatic Cancer)-4 trial and compare how the survival of patients differs with two different treatments:<a href="../applications/gem_gemcap_pdac.html" > GEM Vs. GEMCAP… </a></p>
@@ -61,7 +61,7 @@ description: How do Model Estimated Controls work?
 </div>
 </section>
 </div>
-<div class="box" style="background-color:#5d3954;">
+<div class="box-round">
 <section id="fit-counterfactual-model" class="level2">
 <h2 class="anchored" data-anchor-id="fit-counterfactual-model">Fit counterfactual model :)</h2>
 <p>We can turn the flexible parametric model into a CFM using the pscCFM() function:</p>
@@ -568,7 +568,7 @@ attr(,&quot;class&quot;)
 </div>
 </section>
 </div>
-<div class="box" style="background-color:#915c83;">
+<div class="box-round">
 <section id="make-comparison" class="level2">
 <h2 class="anchored" data-anchor-id="make-comparison">Make comparison!</h2>
 <p>The CFM can be compared against the ESPAC-4 data cohort. The comparison will be carried out using the pscfcit() function.</p>
@@ -1079,7 +1079,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 
-<div class="box" style= "background-color: #58427c ;">
+<div class="box-round">
 <section id="more-details" class="level2">
 <h2 class="anchored" data-anchor-id="more-details">More details!</h2>
 <li>More details on GEM model vs GEMCAP patients can be found <a href="../applications/gem_gemcap_pdac.html"> here. </a></li>
