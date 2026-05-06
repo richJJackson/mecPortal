@@ -14,7 +14,7 @@ Welcome
 <p>
 
 
-This page is your starting point for learning and using <b>Personalised Synthetic Controls (PSCs)</b>. 
+This page is your starting point for learning about and using <b>Personalised Synthetic Controls (PSCs)</b>. 
 Choose the section that fits your role to get started with resources that are most suitable for you!
 
 </p>
@@ -25,11 +25,11 @@ Choose the section that fits your role to get started with resources that are mo
       <h3>Methodologists</h3>
       <p>Assumptions, estimands, diagnostics</p>
       <ul>
-        <li>Identification strategy and assumptions</li>
-        <li>Balance diagnostics and calibration</li>
+        <li>Mathematical framework of PSCs</li>
+        <li><a href="../framework.html#assumptions">Assumptions</a></li>
       </ul>
       <ul class="actions">
-        <li><a href="advanced_manual.html" class="button special big">View Methods</a></li>
+        <li><a href="advanced_manual.html" class="button special">View Methods</a></li>
       </ul>
     </div>
   </section>
@@ -39,12 +39,12 @@ Choose the section that fits your role to get started with resources that are mo
       <h3>Students</h3>
       <p>Find out about core concepts, see worked examples, and interactive demos.</p>
       <ul>
-        <li>What is a PSC and when to use it</li>
-        <li>How PSCs are built and interpreted</li>
+        <li>What are PSCs and when to use them</li>
+        <li>How PSCs are built, interpreted and validated</li>
         <li>Quick understanding checks</li>
       </ul>
       <ul class="actions">
-        <li><a href="beginner_tutorial.html" class="button big">Start Learning</a></li>
+        <li><a href="beginner_tutorial.html" class="button">Start Learning</a></li>
       </ul>
     </div>
   </section>
@@ -55,11 +55,11 @@ Choose the section that fits your role to get started with resources that are mo
       <p>Plain-language explanations.</p>
       <ul>
         <li>Why PSCs matter for patients</li>
-        <li>What PSCs can and cannot be used for (practical impact)</li>
+        <li>What PSCs can and cannot be used for</li>
         <li>Key terms and common questions</li>
       </ul>
       <ul class="actions">
-        <li><a href="faqs.html" class="button special big">Read FAQs</a></li>
+        <li><a href="faqs.html" class="button special">Read FAQs</a></li>
       </ul>
     </div>
   </section>
@@ -69,12 +69,13 @@ Choose the section that fits your role to get started with resources that are mo
       <h3>Applied Researchers</h3>
       <p>Go straight to implementation workflow, data needs, and models available for use.</p>
       <ul>
-        <li><a href= "../learn/howto_land.html">Study setup and use-case fit</a></li>
+        <li><a href= "../learn/howto_land.html">Study setup</a></li>
+        <li></li>
         <li> <a href= "../learn/howto_formatData.html">Data preparation and application </a></li>
-        <li>Validation and reporting guidance</li>
+        <li>Validation and reporting</li>
       </ul>
       <ul class="actions">
-        <li><a href="../models.html" class="button big">View available models</a></li>
+        <li><a href="../models.html" class="button ">View available models</a></li>
       </ul>
     </div>
   </section>
@@ -89,7 +90,7 @@ Choose the section that fits your role to get started with resources that are mo
         <li>Implications for service planning</li>
       </ul>
       <ul class="actions">
-        <li><a href="faqs.html" class="button special big">See Key Questions</a></li>
+        <li><a href="faqs.html" class="button special ">See Key Questions</a></li>
       </ul>
     </div>
   </section>
@@ -112,6 +113,6 @@ Choose the section that fits your role to get started with resources that are mo
     <li>Check the interpretation checklist before drawing conclusions.</li>
   </ol>
   <ul class="actions">
-    <li><a href="video_walkthrough.html" class="button big">Watch Walkthroughs</a></li>
+    <li><a href="video_walkthrough.html" class="button ">Watch Walkthroughs</a></li>
   </ul>
 </div>

@@ -51,7 +51,7 @@ description:  A model to describe overall survival in patients with PDAC
 
 <div class="section-content">
 <p>
-<ul><li> 2 sentences & 3 bullet points describing what was found </li></ul>
+
 <ul><li> 
 A counterfactual model was developed, that can predict the survival of patients
 when treated with Gemcitabine plus Capecitabine (GemCap).

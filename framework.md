@@ -10,6 +10,7 @@ nav-menu: true
 <!-- Main -->
 <div id="main">
 
+
 <!-- One -->
 <section id="one">
 	
@@ -77,9 +78,11 @@ nav-menu: true
     </tbody>
     </table>
     </div>
-
+    
+    
+    
     <header class="major">
-    <h3> Assumptions of PSCs: </h3>
+    <h3 id="assumptions"> Assumptions of PSCs: </h3>
     </header>
     
     <li>the parameters of the counterfactual model (CFM)
@@ -116,6 +119,20 @@ nav-menu: true
   	<a href="learn.html" class="button special"> Read more about when PSCs should be used </a>
     </p>
   </div>
+  
+  
+  <div class="inner">
+    <header class="major">
+      <h1> Limitations of PSCs </h1>
+    </header>
+    
+    <ul> Reliance on the <a href="framework.html#assumptions" > assumptions. If the
+    assumptions are not met then the treatment effect estimates may be biased.</a> </ul>
+    
+    
+   
+   
+   </div>
    
 </section>
 
@@ -172,7 +189,7 @@ nav-menu: true
 				</header>
 				<p>Access the published manuscript about Personalised Synthetic Controls </p>
 				<ul class="actions">
-					<li><a href="https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-025-02540-2" class="button">Learn more</a></li>
+					<li><a href="https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-025-02540-2" target="_blank" rel="noopener noreferrer" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
