@@ -45,19 +45,16 @@ The vignette includes methodology details, package workflows, and a motivating s
 <ul>
   <li><b>Conditional exchangeability:</b> key prognostic factors affecting treatment and outcome are measured.</li>
   <li><b>Stable Unit Treatment Variability Assumption</b> each patient's potential outcome is not altered by other patients or treatment-label representation.</li>
-  <li><b>Correct model specification:</b> the parametric counterfactual model is appropriate for endpoint type and covariate structure.</li>
+  <li><b>Correct model specification:</b> the parametric counterfactual model must be appropriate.</li>
   <li><b>Posterior approximation:</b> the estimation procedure assumes the model posterior is well-approximated by a multivariable normal distribution.</li>
   <li><b>Transportability:</b> application of the CFM from its development setting to the target cohort.</li>
   <li><b>Positivity/overlap:</b> treated patients have non-zero control probability and inference remains within supported covariate ranges.</li>
   <li><b>Data consistency:</b> endpoint definitions, covariate coding, and follow-up windows are aligned across datasets.</li>
-  <li> <a href="../framework.html">Read more about PSC assumptions</a></li>
+  <li> <a href="../framework.html#assumptions">Read more about PSC assumptions</a></li>
 </ul>
 
-<h3>Recommended technical outputs</h3>
-<ul>
-  <li>covariate balance and overlap diagnostics,</li>
-  <li>model fit checks and calibration summaries,</li>
-</ul>
+
+
 
 </div>
 </section>
@@ -76,18 +73,18 @@ The vignette includes methodology details, package workflows, and a motivating s
   <li><b>Summarize and visualize</b> treatment effects.</li>
 </ol>
 
-<p>See the vignette for current function names, argument signatures, and endpoint-specific examples.</p>
+<p>See the vignette for current functions, their parameters, and examples how to use them.</p>
 
 <h3>Implementation</h3>
 <ul>
   <li>.</li>
 </ul>
 
-<h3>Recommended reporting structure</h3>
+<h3>Reporting PSC results</h3>
 <ul>
   <li><b>Data:</b> Background, eligibility criteria, missingness handling.</li>
   <li><b>Model:</b> formula/structure, fitting strategy.</li>
-  <li><b>Diagnostics:</b> overlap, calibration, validation.</li>
+  <li><b>Diagnostics:</b> Calibration, validation.</li>
   <li><b>Results:</b> estimates, interval estimates, subgroup summaries.</li>
 </ul>
 

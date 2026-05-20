@@ -33,7 +33,7 @@ similar patients and a counterfactual model.
 
 <ul>
   <li><b>They support individualised comparison:</b> each treated patient is compared against their own counterfactual prediction.</li>
-  <li><b>They can be used in single-arm settings:</b> especially when no control arm is available.</li>
+  <li><b>They can be used in single-arm settings:</b> especially when a control arm is not available.</li>
   <li><b>They use clinically relevant patient features:</b> such as prognostic baseline covariates.</li>
   <li><b>They provide interpretable treatment-effect summaries:</b> at patient level and cohort level.</li>
 </ul>
@@ -52,7 +52,8 @@ similar patients and a counterfactual model.
 <ol>
   <li><b>Start with patient data.</b> Use data from patients treated the current standard of care.</li>
   <li><b>Fit a model on the patient data.</b> The model links baseline patient covariates to expected outcomes that standard of care.</li>
-  <li><b>Apply the PSC model to a data cohort of patients treated with an experimental treatment</b> For each treated patient, predict their expected outcome under the standard care.</li>
+  <li><b>Apply the PSC model to a data cohort of patients treated with an experimental 
+  treatment</b> For each treated patient, predict their expected outcome under the standard care.</li>
   <li><b>Compare the actual observed versus predicted outcomes.</b> The difference between the observed treated outcome and the PSC prediction gives the estimated treatment effect.</li>
 </ol>
 
@@ -68,11 +69,12 @@ similar patients and a counterfactual model.
 A patient with advanced cancer receives a new treatment 
 in a single-arm study. We observe their survival time, 
 but we do not observe what would have happened if that 
-same patient had instead received standard care.
+same patient had instead received standard care or a 
+different treatment.
 </p>
 
 <p>
-A PSC (built from standard-care patients with similar 
+A PSC (built from patients treated with the standard care and with similar 
 clinical characteristics, e.g., age, performance status,) predicts the
 patient's expected outcome had they been treated with the current standard
 treatment. If the treated patient's outcome is better than the predicted 
@@ -117,7 +119,7 @@ own baseline characteristics.
   <li>The method used to predict expected outcomes should fit the data structure well.</li>
   <li>The treated patients are comparable to the reference setting, so the treated data cohort
   should not be too different to the patient population used to build the PSC model.</li>
-  <li>Outcomes, covariates should exist and mean the same thing in both datasets used.</li>
+  <li>Outcomes and covariates should exist and mean the same thing in both datasets used.</li>
 </ul>
 
 <p>

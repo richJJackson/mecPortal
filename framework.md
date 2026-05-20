@@ -126,8 +126,8 @@ nav-menu: true
       <h1> Limitations of PSCs </h1>
     </header>
     
-    <ul> Reliance on the <a href="framework.html#assumptions" > assumptions. If the
-    assumptions are not met then the treatment effect estimates may be biased.</a> </ul>
+    <ul> Reliance on the <a href="#assumptions"> assumptions.</a> If the
+    assumptions are not met then the treatment effect estimates may be biased. </ul>
     
     
    
