@@ -1,39 +1,13 @@
 ---
 layout: app
-title:  Predicting Phase III outcome from Phase II trials
+title: Predicting Phase III Outcome from Phase II Trials
 area: HCC
-description:  A template of an applied PSC problem
+description: Using PSCs to extrapolate early-phase evidence to phase III expectations.
+image: assets/images/rw-examples.jpg
 ---
 
-# Layout
+<p>
+This application explores whether PSC methodology can support prediction of phase III outcomes from single-arm or phase II data, using validated counterfactual models as external controls.
+</p>
 
-
-## Executive Summary
-
-## Model Setting (PICO)
-
-## Descripotn of model
-
-link to model page
-
-## descrioption of data
-
-pscVis example
-
-## Analysis
-
-pscfit and images
-
-## Sub-group analysis
-
-
-## Conclusions
-
-
-## Reference
-
-Give details of the models
-
-
-
-
+{% include app_content_template.html %}

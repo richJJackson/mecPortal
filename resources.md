@@ -1,8 +1,10 @@
 ---
-layout: resources
-order: 5
+layout: page
 title: Resources
-description: Documents and guides for PSCs
+description: Guides and reference material are now part of Methodology.
 image: assets/images/resour.jpg
-nav-menu: true
+nav-menu: false
+show_tile: false
 ---
+
+<p>Guides and reference material are now available in the <a href="{{ 'methodology.html' | relative_url }}#guides">Methodology</a> section.</p>

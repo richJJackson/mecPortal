@@ -2,14 +2,18 @@
 layout: app
 title: Lenvatinib Vs Sorafenib
 area: HCC
-description:  A CFM model to predict and compare the response of lenvatinib treated patients to sorafenib treatment
+description: Compare lenvatinib-treated patients against a sorafenib counterfactual model.
+image: assets/images/rw-examples.jpg
 ---
 
 <p>
-The observed survival outcome of patients treated with Lenvatinib
-(experimental treatment) were compared against the predicted 
-response of Sorafenib (control treatment). A counterfactual
-model (CFM) is used to estimate the expected response of patients
-had they been treated with Sorafenib. 
+The observed survival of patients treated with lenvatinib (experimental) is compared against predicted sorafenib outcomes from a counterfactual model (control).
 </p>
 
+<div>
+  <ul class="actions">
+    <li><a href="../models/hcc_prosash.html" class="button special">Sorafenib model (PROSASH)</a></li>
+  </ul>
+</div>
+
+{% include app_content_template.html %}

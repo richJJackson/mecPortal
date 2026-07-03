@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Model Estimated Controls - A Causal Inference Tool"
+title: PSCs — A Causal Inference Tool
 date: 2025-03-12
 categories: [methods]
-description: How do Model Estimated Controls work?
+description: How Personalised Synthetic Controls support causal inference when only experimental-arm data are available.
 image:
 ---
 
@@ -20,14 +20,14 @@ Details on Model Estimated Controls as a tool for Causal Inference
 
 	<section>
 		<a href="causal_psc.html" class="image">
-			<img src="{% link assets/images/jigsaw-pieces.jpg %}" alt="" data-position="center center" />
+			<img src="{% link assets/images/concept-estim.jpg %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3> MEC and Causal Inference </h3>
+					<h3>PSCs and Causal Inference</h3>
 				</header>
-				<p> Understand potential outcomes and how MEC make use for these to make Causal Inference Statements </p>
+				<p>Potential outcomes, the PSC estimand, key assumptions, and how this approach differs from G-computation, propensity scores, and classical synthetic controls.</p>
 				<ul class="actions">
 					<li><a href="causal_psc.html" class="button">Learn more</a></li>
 				</ul>

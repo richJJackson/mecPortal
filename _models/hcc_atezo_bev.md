@@ -366,7 +366,7 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
     <h3> Model Prediction</h3>
     See how this model can be used to predict survival!
     <ul class="actions">
-      <li><a href="#" class="button special">Rshiny</a></li>
+      <li><a href="https://prediction-models.liverpool.ac.uk/prosash.html" target="_blank" rel="noopener noreferrer" class="button special">Rshiny</a></li>
     </ul>
   </div>
  

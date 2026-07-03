@@ -7,11 +7,13 @@ description:  A CFM model to predict and compare the response of gemcitabine cap
 
 
 
-<p>The observed survival outcome of patients treated with gemcitabine plus capecitabine (GEMCAP)
+<p>
+The observed survival outcome of patients treated with gemcitabine plus capecitabine (GEMCAP)
 (experimental treatment) were compared against the predicted 
 response of monotherapy gemcitabine (GEM) (control treatment). A counterfactual
 model (CFM) is used to estimate the expected response of patients
-had they been treated with GEM. </p>
+had they been treated with GEM. 
+</p>
 
 <div>
   <ul class="actions">

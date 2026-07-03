@@ -1,0 +1,23 @@
+<section id="guides" class="inner">
+	<header class="major">
+		<h2>Guides &amp; Reference</h2>
+	</header>
+	<p>Whether you are new to PSCs or implementing them in code, pick the guide that fits your role.</p>
+
+	<section class="tiles">
+		{% assign resources_sorted = site.resources | sort: "order" %}
+		{% for res in resources_sorted %}
+		{% if res.title != 404 %}
+		<article>
+			<span class="image">
+				<img src="{{ res.image | relative_url }}" alt="{{ res.title }}" />
+			</span>
+			<header class="major">
+				<h3><a href="{{ res.url | absolute_url }}" class="link">{{ res.title }}</a></h3>
+				<p>{{ res.description }}</p>
+			</header>
+		</article>
+		{% endif %}
+		{% endfor %}
+	</section>
+</section>

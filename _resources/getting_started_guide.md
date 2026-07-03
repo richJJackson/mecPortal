@@ -26,7 +26,7 @@ Choose the section that fits your role to get started with resources that are mo
       <p>Assumptions, estimands, diagnostics</p>
       <ul>
         <li>Mathematical framework of PSCs</li>
-        <li><a href="../framework.html#assumptions">Assumptions</a></li>
+        <li><a href="../methodology.html#assumptions">Assumptions</a></li>
       </ul>
       <ul class="actions">
         <li><a href="advanced_manual.html" class="button special">View Methods</a></li>
@@ -69,7 +69,7 @@ Choose the section that fits your role to get started with resources that are mo
       <h3>Applied Researchers</h3>
       <p>Go straight to implementation workflow, data needs, and models available for use.</p>
       <ul>
-        <li><a href= "../learn/howto_land.html">Study setup</a></li>
+        <li><a href="../learn/howto_land.html">Study setup</a></li>
         <li></li>
         <li> <a href= "../learn/howto_formatData.html">Data preparation and application </a></li>
         <li>Validation and reporting</li>

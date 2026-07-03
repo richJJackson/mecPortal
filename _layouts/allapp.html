@@ -19,17 +19,17 @@
     <section id="banner" class="minor">
         <div class="inner">
             <header class="minor">
-                <h1>Applications</h1>
+                <h1>{% if page.banner_title %}{{ page.banner_title }}{% else %}{{ page.title }}{% endif %}</h1>
             </header>
             <div class="content">
-                <p style="text-transform: uppercase;"> Discover how Personalised Synthetic Controls are used in practice! </p>
+                <p style="text-transform: uppercase;">{% if page.banner_lead %}{{ page.banner_lead }}{% else %}{{ page.description }}{% endif %}</p>
             </div>
         </div>
     </section>
 
-    
+    {{ content }}
 
-      <!-- One -->
+      <!-- Applications -->
       <div id="tiles" class="alt">
       <section id="allapp" class="tiles">
           {% for app in site.applications %}
@@ -38,8 +38,8 @@
 	          
         	  <header class="major">
         	    <h4>
-        	      <a href="{{ site.baseurl }}/{{ app.url }}">
-                {{ app.title }} - {{ app.area }}
+        	      <a href="{{ app.url | absolute_url }}">
+                {{ app.title }} — {{ app.area }}
                 </a>
         	    </h4>
         	    <p>{{ app.description }}</p>

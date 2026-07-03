@@ -19,18 +19,17 @@
     <section id="banner" class="minor">
         <div class="inner">
             <header class="minor">
-                <h1>Counter Factual Models</h1>
+                <h1>{% if page.banner_title %}{{ page.banner_title }}{% else %}{{ page.title }}{% endif %}</h1>
             </header>
             <div class="content">
-                <p style="text-transform: uppercase;">A selection of models to generate counter factual evidence!</p>
+                <p style="text-transform: uppercase;">{% if page.banner_lead %}{{ page.banner_lead }}{% else %}{{ page.description }}{% endif %}</p>
             </div>
         </div>
     </section>
 
-    
+    {{ content }}
 
-      <!-- One -->
-      
+      <!-- Models -->
       {% assign model_areas = site.models | group_by: "area" %}
 
       {% for group in model_areas %} 
@@ -41,23 +40,20 @@
 	  
       <section id="modTiles" class="spotlights">
 
-        
-        
           {% for model in group.items %}
   	      {% if model.title != 404 %}
           <section> 
-            <a href="{{ site.baseurl }}/{{ model.url }} "class="image">
-            <img src={{model.image}} alt="" data-position="center center" />
+            <a href="{{ model.url | absolute_url }}" class="image">
+            <img src="{{ model.image | relative_url }}" alt="" data-position="center center" />
             </a>
           	      	        
   	        <div class="content">
   	          <div class="inner">
   	            <header class="major">
   	              <h3>
-  	              <a href="{{ site.baseurl }}/{{ model.url }}">{{ model.title }} - {{ model.area }} 
+  	              <a href="{{ model.url | absolute_url }}">{{ model.title }} — {{ model.area }} 
   	              </a>
   	              </h3>
-          	    
           	    </header>
           	    <p>{{ model.description }}</p>
           	  </div>

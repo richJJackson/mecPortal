@@ -330,7 +330,7 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
     <h3> Model Prediction</h3>
     See how this model can be used to predict survival!
     <ul class="actions">
-      <li><a href="#" class="button special">Rshiny</a></li>
+      <li><a href="https://prediction-models.liverpool.ac.uk/prosash.html" target="_blank" rel="noopener noreferrer" class="button special">Rshiny</a></li>
     </ul>
   </div>
  
@@ -467,7 +467,7 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
     <p>
       Download this model and learn how to use it by visiting
         <ul class="actions">
-          <li><a href= "github/richJJackson/pscLibrary/test_model" class="button special">Download</a> </li>
+          <li><a href="https://github.com/richJJackson/pscRepository/tree/main/Models/HCC/AtezoBev" target="_blank" rel="noopener noreferrer" class="button special">Download</a></li>
         </ul>
     </p>
     </div>

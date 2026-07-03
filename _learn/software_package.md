@@ -26,7 +26,7 @@ description: Learn more about the package for MECs
 <div class="box">
 <section id="installation" class="level2">
 <h2 class="anchored" data-anchor-id="installation">Installation</h2>
-<p>You can install the development version of psc from <a href="https://github.com/">GitHub</a> with:</p>
+<p>You can install the development version of psc from <a href="https://github.com/richJJackson/psc">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&quot;devtools&quot;)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;richJJackson/psc&quot;</span>)</span></code></pre></div>
 </section>

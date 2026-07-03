@@ -50,7 +50,7 @@ The vignette includes methodology details, package workflows, and a motivating s
   <li><b>Transportability:</b> application of the CFM from its development setting to the target cohort.</li>
   <li><b>Positivity/overlap:</b> treated patients have non-zero control probability and inference remains within supported covariate ranges.</li>
   <li><b>Data consistency:</b> endpoint definitions, covariate coding, and follow-up windows are aligned across datasets.</li>
-  <li> <a href="../framework.html#assumptions">Read more about PSC assumptions</a></li>
+  <li> <a href="../methodology.html#assumptions">Read more about PSC assumptions</a></li>
 </ul>
 
 

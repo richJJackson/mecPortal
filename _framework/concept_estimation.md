@@ -14,12 +14,6 @@ image:
 
 
 
-
-
-
-
-
-
 <section id="concept" class="spotlights">
 
 
@@ -137,7 +131,7 @@ image:
   <div class="inner">
       <header class="major">
   	    <h2>
-        <a href="methods_glm.html"> MECs for Binary/Continuous Outcomes </a>
+        <a href="../learn/methods_glm.html"> MECs for Binary/Continuous Outcomes </a>
         </h2>
       </header>
 	    <p>Understand how Model Estimated Controls work with MEC based on Generalised Linear Models </p>
@@ -146,7 +140,7 @@ image:
   <div class="inner">
       <header class="major">
   	    <h2>
-        <a href="methods_surv.html"> MECs for Survival Outcomes </a>
+        <a href="../learn/methods_surv.html"> MECs for Survival Outcomes </a>
         </h2>
       </header>
 	    <p> Understand how Model Estimated Controls work with MEC based on Parametric Survival Models </p>
@@ -155,7 +149,7 @@ image:
   <div class="inner">
       <header class="major">
   	    <h2>
-        <a href="methods_surv.html"> Bayesian Estimation of MECs </a>
+        <a href="../learn/methods_surv.html"> Bayesian Estimation of MECs </a>
         </h2>
       </header>
 	    <p> Get more details on the Bayesian estimation procedures along with MCMC algorithms </p>
