@@ -296,25 +296,25 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
   <h4>Calibration</h4>
   
     <div class="table-wrapper">
-  <table>
+ <table>
  <thead>
   <tr>
    <th style="text-align:left;">  </th>
-   <th style="text-align:left;"> est (se) </th>
+   <th style="text-align:left;"> Estimate (SE) </th>
   </tr>
  </thead>
 <tbody>
   <tr>
    <td style="text-align:left;"> C-Statistic </td>
-   <td style="text-align:left;"> 0.70 (0.017) </td>
+   <td style="text-align:left;"> 0.67 (0.031) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Slope </td>
-   <td style="text-align:left;"> 1.00 (0.101) </td>
+   <td style="text-align:left;"> 0.98 (0.187) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Somers' D </td>
-   <td style="text-align:left;"> 0.41 </td>
+   <td style="text-align:left;"> 0.33 </td>
   </tr>
 </tbody>
 </table>
@@ -324,36 +324,36 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
   
   <div class="table-wrapper">
     <table>
-     <thead>
-      <tr>
-       <th style="text-align:left;"> </th>
-       <th style="text-align:right;"> est (se) </th>
-       <th style="text-align:right;"> HR (95% CI) </th>
-      </tr>
-     </thead>
-    <tbody>
-      <tr>
-       <td style="text-align:left;"> Risk Group 1 </td>
-       <td style="text-align:left;"> </td>
-       <td style="text-align:left;"> </td>
-      </tr>
-      <tr>
-       <td style="text-align:left;">  Risk Group 2 </td>
-       <td style="text-align:left;">  0.06 (0.26) </td>
-       <td style="text-align:left;"> 1.06 (0.63, 1.77) </td>
-      </tr>
-      <tr>
-       <td style="text-align:left;"> Risk Group 3 </td>
-       <td style="text-align:left;">  1.06 (0.24) </td>
-       <td style="text-align:left;">  2.89 (1.81, 4.61) </td>
-      </tr>
-      <tr>
-       <td style="text-align:left;"> Risk Group 4 </td>
-       <td style="text-align:left;"> 1.82 (0.26) </td>
-       <td style="text-align:left;"> 6.20 (3.70, 10.37) </td>
-      </tr>
-    </tbody>
-    </table>
+ <thead>
+  <tr>
+   <th style="text-align:left;">  </th>
+   <th style="text-align:left;"> Estimate (SE) </th>
+   <th style="text-align:left;"> HR (95% CI) </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Risk Group 1 </td>
+   <td style="text-align:left;"> 0.00 (0.00) </td>
+   <td style="text-align:left;"> 1.00 (Reference) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Risk Group 2 </td>
+   <td style="text-align:left;"> 0.18 (0.61) </td>
+   <td style="text-align:left;"> 1.19 (0.36, 3.92) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Risk Group 3 </td>
+   <td style="text-align:left;"> 0.92 (0.61) </td>
+   <td style="text-align:left;"> 2.51 (0.76, 8.22) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Risk Group 4 </td>
+   <td style="text-align:left;"> 1.66 (0.63) </td>
+   <td style="text-align:left;"> 5.26 (1.52, 18.16) </td>
+  </tr>
+</tbody>
+</table>
   
   </div>
 
@@ -364,7 +364,7 @@ knots were chosen and were placed at the timepoints 3, 6 12, and 24 months.
 
   Kaplan Meier plot to show survival estimates within each of the 4 risk groups
 
-  <span class="image fit"><img src="{% link assets/images/atBev_discrim.png %}" alt="" /></span>
+  <span class="image fit"><img src="{% link assets/images/Tace-sirt_Discrim.png %}" alt="" /></span>
 
 
    </div>
